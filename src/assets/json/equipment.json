@@ -1,0 +1,629 @@
+{
+    "Mainhand" : {
+        "Mythic" : [
+            {
+                "tooltip": "Frostwing Greatsword",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/frostwing.png"
+            },
+            {
+                "tooltip": "Wyrm Rod",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/jade.png"
+            },
+            {
+                "tooltip": "Terror Lash",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/terror.png"
+            },
+            {
+                "tooltip": "Horn Cudgel",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/gargantua.png"
+            },
+            {
+                "tooltip": "Skullcrusher",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/helldrider.png"
+            },
+            {
+                "tooltip": "Malicious Saw",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/mecha.png"
+            },
+            {
+                "tooltip": "Nectar Orb",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/queenBee.png"
+            },
+            {
+                "tooltip": "Decadent Sword",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/bon.png"
+            },
+            {
+                "tooltip": "Kraken's Anchor",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/tidalTitan.png"
+            },
+            {
+                "tooltip": "Ghastly Cane",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/cottageroar.png"
+            },
+            {
+                "tooltip": "Eon Axe",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/gawrilla.png"
+            },
+            {
+                "tooltip": "Champion Edge",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/champ1.png"
+            },
+            {
+                "tooltip": "Champion Blade",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/champ2.png"
+            },
+            {
+                "tooltip": "Champion Greatsword",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/champ3.png"
+            }
+        ],
+
+        "Legendary": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Epic": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Rare": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Uncommon": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Common": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ]
+    },
+
+    "Offhand" : {
+        "Mythic": [
+            {
+                "tooltip": "Winter Mitts",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/snowBeast.png"
+            },
+            {
+                "tooltip": "Dark Aegis",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/helldrider.png"
+            },
+            {
+                "tooltip": "Eternal Codex",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/grim.png"
+            },
+            {
+                "tooltip": "Dragon's Fist",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/blackwing.png"
+            },
+            {
+                "tooltip": "Viral Switchblade",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/mecha.png"
+            },
+            {
+                "tooltip": "Call of the Deep",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/tidalTitan.png"
+            },
+            {
+                "tooltip": "Lunar Boomerang",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/hootclaw.png"
+            },
+            {
+                "tooltip": "Erie Lantern",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/cottageroar.png"
+            },
+            {
+                "tooltip": "Spirit Axe",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/necrosis.png"
+            },
+            {
+                "tooltip": "Champion Lamp",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/champ1.png"
+            },
+            {
+                "tooltip": "Champion Light",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/champ2.png"
+            },
+            {
+                "tooltip": "Champion Katar",
+                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/champ3.png"
+            }
+        ],
+
+        "Legendary": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Epic": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Rare": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Uncommon": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Common": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ]
+    },
+
+    "Helmet" : {
+        "Mythic": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            },
+            {
+                "tooltip": "Ancient Hat",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/grim.png"
+            },
+            {
+                "tooltip": "Beast Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/saber.png"
+            },
+            {
+                "tooltip": "Bumblehelm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/queenBee.png"
+            },
+            {
+                "tooltip": "Champion Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/champ1.png"
+            },
+            {
+                "tooltip": "Champion Visor",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/champ2.png"
+            },
+            {
+                "tooltip": "Champion Armet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/champ3.png"
+            }
+        ],
+
+        "Legendary": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/jade.png"
+            },
+            {
+                "tooltip": "Ancient Hat",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/grim.png"
+            },
+            {
+                "tooltip": "Beast Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/saber.png"
+            },
+            {
+                "tooltip": "Bumblehelm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/queenBee.png"
+            },
+            {
+                "tooltip": "Champion Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/champ1.png"
+            },
+            {
+                "tooltip": "Champion Visor",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/champ2.png"
+            },
+            {
+                "tooltip": "Champion Armet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/champ3.png"
+            }
+        ],
+    
+        "Epic": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/jade.png"
+            },
+            {
+                "tooltip": "Ancient Hat",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/grim.png"
+            },
+            {
+                "tooltip": "Beast Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/saber.png"
+            },
+            {
+                "tooltip": "Bumblehelm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/queenBee.png"
+            },
+            {
+                "tooltip": "Champion Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/champ1.png"
+            },
+            {
+                "tooltip": "Champion Visor",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/champ2.png"
+            },
+            {
+                "tooltip": "Champion Armet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/champ3.png"
+            }
+        ],
+    
+        "Rare": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/jade.png"
+            },
+            {
+                "tooltip": "Ancient Hat",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/grim.png"
+            },
+            {
+                "tooltip": "Beast Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/saber.png"
+            },
+            {
+                "tooltip": "Bumblehelm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/queenBee.png"
+            },
+            {
+                "tooltip": "Champion Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/champ1.png"
+            },
+            {
+                "tooltip": "Champion Visor",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/champ2.png"
+            },
+            {
+                "tooltip": "Champion Armet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/champ3.png"
+            }
+        ],
+    
+        "Uncommon": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/jade.png"
+            },
+            {
+                "tooltip": "Ancient Hat",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/grim.png"
+            },
+            {
+                "tooltip": "Beast Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/saber.png"
+            },
+            {
+                "tooltip": "Bumblehelm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/queenBee.png"
+            },
+            {
+                "tooltip": "Champion Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/champ1.png"
+            },
+            {
+                "tooltip": "Champion Visor",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/champ2.png"
+            },
+            {
+                "tooltip": "Champion Armet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/champ3.png"
+            }
+        ],
+    
+        "Common": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/jade.png"
+            },
+            {
+                "tooltip": "Ancient Hat",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/grim.png"
+            },
+            {
+                "tooltip": "Beast Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/saber.png"
+            },
+            {
+                "tooltip": "Bumblehelm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/queenBee.png"
+            },
+            {
+                "tooltip": "Champion Helm",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/champ1.png"
+            },
+            {
+                "tooltip": "Champion Visor",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/champ2.png"
+            },
+            {
+                "tooltip": "Champion Armet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/champ3.png"
+            }
+        ]
+    },
+
+    "Chest" : {
+        "Mythic": [
+            {
+                "tooltip": "Terror Shield",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/terror.png"
+            },
+            {
+                "tooltip": "Deathly Mantle",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/grim.png"
+            },
+            {
+                "tooltip": "Predator Pauldrons",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/saber.png"
+            },
+            {
+                "tooltip": "Firewall Plate",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/mecha.png"
+            },
+            {
+                "tooltip": "Hardened Carapace",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/queenBee.png"
+            },
+            {
+                "tooltip": "Hedonic Cuirass",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/bon.png"
+            },
+            {
+                "tooltip": "Beastly Breastplate",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/hootclaw.png"
+            },
+            {
+                "tooltip": "Champion Plate",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/champ1.png"
+            },
+            {
+                "tooltip": "Champion Mail",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/champ2.png"
+            },
+            {
+                "tooltip": "Champion Cuirass",
+                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/champ3.png"
+            }
+        ],
+
+        "Legendary": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Epic": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Rare": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Uncommon": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Common": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ]
+    },
+
+    "Boots" : {
+        "Mythic": [
+            {
+                "tooltip": "Gargantuan Belt",
+                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/gargantua.png"
+            },
+            {
+                "tooltip": "Legs of the Deceiver",
+                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/helldrider.png"
+            },
+            {
+                "tooltip": "Untamed Boots",
+                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/saber.png"
+            },
+            {
+                "tooltip": "Dragon's Talon",
+                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/blackwing.png"
+            },
+            {
+                "tooltip": "Storm Tasset",
+                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/tidalTitan.png"
+            },
+            {
+                "tooltip": "Blizzard Pants",
+                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/articFlipper.png"
+            },
+            {
+                "tooltip": "Champion Stride",
+                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/champ1.png"
+            },
+            {
+                "tooltip": "Champion Boots",
+                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/champ2.png"
+            },
+            {
+                "tooltip": "Champion Greaves",
+                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/champ3.png"
+            }
+        ],
+
+        "Legendary": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Epic": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Rare": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Uncommon": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Common": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ]
+    },
+
+    "Accessory" : {
+        "Mythic": [
+            {
+                "tooltip": "Wyrm Seal",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/jade.png"
+            },
+            {
+                "tooltip": "Terror Vial",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/terror.png"
+            },
+            {
+                "tooltip": "Fear Drum",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/gargantua.png"
+            },
+            {
+                "tooltip": "Blight Ring",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/maggot.png"
+            },
+            {
+                "tooltip": "Burning Scroll",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/helldrider.png"
+            },
+            {
+                "tooltip": "Ivory Choker",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/saber.png"
+            },
+            {
+                "tooltip": "Dragon's Iris",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/blackwing.png"
+            },
+            {
+                "tooltip": "Secret Totem",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/mecha.png"
+            },
+            {
+                "tooltip": "Ambrosial Cup",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/bon.png"
+            },
+            {
+                "tooltip": "Rowdy Resolve",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/gawrilla.png"
+            },
+            {
+                "tooltip": "Book of the Dead",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/necrosis.png"
+            },
+            {
+                "tooltip": "Polar Ring",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/arcticFlipper.png"
+            },
+            {
+                "tooltip": "Champion Faith",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/champ1.png"
+            },
+            {
+                "tooltip": "Champion Valor",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/champ2.png"
+            },
+            {
+                "tooltip": "Champion Blessing",
+                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/champ3.png"
+            }
+        ],
+
+        "Legendary": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Epic": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Rare": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Uncommon": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Common": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ]
+    }
+}

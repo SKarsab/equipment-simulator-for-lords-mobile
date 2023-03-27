@@ -10,6 +10,8 @@ import { EquipmentSimulatorComponent } from './routing/equipment-simulator/equip
 import { HomeComponent } from './routing/home/home.component';
 import { GuidesComponent } from './routing/guides/guides.component';
 import { FaqComponent } from './routing/faq/faq.component';
+import { FeatureCardComponent } from './feature-card/feature-card.component';
+import { BuildsBenchmarksComponent } from './routing/builds-benchmarks/builds-benchmarks.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FaqComponent } from './routing/faq/faq.component';
     EquipmentSimulatorComponent,
     HomeComponent,
     GuidesComponent,
-    FaqComponent
+    FaqComponent,
+    FeatureCardComponent,
+    BuildsBenchmarksComponent
   ],
   imports: [
     BrowserModule,

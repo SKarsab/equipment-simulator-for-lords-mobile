@@ -7,5 +7,5 @@ import { HOME_ROUTE } from '../../../utilities/constants';
   styleUrls: ['./guides.component.css']
 })
 export class GuidesComponent {
-  HOME_PATH = HOME_ROUTE;
+  HOME_PATH:string = HOME_ROUTE;
 }

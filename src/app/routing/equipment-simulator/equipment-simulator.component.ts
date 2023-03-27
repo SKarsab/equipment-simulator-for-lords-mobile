@@ -7,5 +7,5 @@ import { HOME_ROUTE } from '../../../utilities/constants';
   styleUrls: ['./equipment-simulator.component.css']
 })
 export class EquipmentSimulatorComponent {
-  HOME_PATH = HOME_ROUTE;
+  HOME_PATH:string = HOME_ROUTE;
 }

@@ -15,7 +15,7 @@
                 </li>
                 <li class="nav-item nav p-1 text-white" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
                     <span class="material-symbols-outlined align-self-center p-0">avg_time</span>
-                    <a class="nav-link text-white" routerLink="/builds-benchmarks">Builds and Benchmarks</a>
+                    <a class="nav-link text-white" routerLink={{BENCHMARKS_PATH}}>Builds and Benchmarks</a>
                 </li>
                 <li class="nav-item nav p-1 text-white" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
                     <span class="material-symbols-outlined align-self-center p-0">menu_book</span>
@@ -37,40 +37,3 @@
         </div>
     </div>
 </nav>
-
-<!-- <div class="container-fluid p-0 banner-img bg-z"></div>
-
-<nav class="container-fluid navbar navbar-expand-md nav-position-top p-0 mt-2 fg-z">
-   
-    <button class="navbar-toggler m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav me-auto">
-            <li class="nav-item p-1" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                <a class="nav-link nav" routerLink="/">Home</a>
-            </li>
-            <li class="nav-item p-1" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                <a class="nav-link nav" routerLink="/equipment-simulator">Equipment Simulator</a>
-            </li>
-            <li class="nav-item p-1" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                <a class="nav-link nav" routerLink="/builds-benchmarks">Builds and Benchmarks</a>
-            </li>
-            <li class="nav-item p-1" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                <a class="nav-link nav" routerLink="/guides">Guides</a>
-            </li>
-
-            <li class="nav-item dropdown p-1">
-                <a class="nav-link nav dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    About
-                </a>
-                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                    <li class="dropdown-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                        <a class="nav-link nav" routerLink="/faq">FAQ</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav> -->

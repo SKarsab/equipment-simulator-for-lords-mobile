@@ -5,5 +5,18 @@
         <div class="breadcrumb-wrapper p-1"></div>
     </div>
 
-    <p>Home Component</p>
+    <div class="d-flex align-items-center mt-3">
+        <div class="container">
+            <div class="" *ngFor="let feature of features">
+                <app-feature-card 
+                [title]="feature.title" 
+                [description]="feature.description" 
+                [position]="feature.position"
+                [imagePath]="feature.imagePath"
+                [colour]="feature.colour"
+                [navigationPath]="feature.navigationPath">
+            </app-feature-card>
+            </div>
+        </div>
+    </div>
 </div>

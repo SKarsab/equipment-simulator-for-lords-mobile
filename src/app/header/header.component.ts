@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HOME_ROUTE, SIMULATOR_ROUTE, GUIDES_ROUTE, FAQ_ROUTE } from '../../utilities/constants';
+import { HOME_ROUTE, SIMULATOR_ROUTE, BENCHMARKS_ROUTE, GUIDES_ROUTE, FAQ_ROUTE } from '../../utilities/constants';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +7,9 @@ import { HOME_ROUTE, SIMULATOR_ROUTE, GUIDES_ROUTE, FAQ_ROUTE } from '../../util
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  HOME_PATH =  HOME_ROUTE;
-  SIMULATOR_PATH = SIMULATOR_ROUTE;
-  GUIDES_PATH = GUIDES_ROUTE;
-  FAQ_PATH = FAQ_ROUTE;
+  HOME_PATH:string =  HOME_ROUTE;
+  SIMULATOR_PATH:string = SIMULATOR_ROUTE;
+  BENCHMARKS_PATH:string = BENCHMARKS_ROUTE;
+  GUIDES_PATH:string = GUIDES_ROUTE;
+  FAQ_PATH:string = FAQ_ROUTE;
 }

@@ -1,3 +1,4 @@
+/* Page Structure Classes */
 .viewport-height {
     min-height: calc(100vh - 160px);
 }
@@ -7,6 +8,7 @@
     background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
+/* Shared Style Classes */
 .underline {
     position: relative;
 }
@@ -32,5 +34,34 @@
     cursor:pointer;
 }
     .link:hover {
+        color: white;
+    }
+
+.b-rounded {
+    border-radius: 0.375rem;
+}
+
+.b-left-coloured {
+    border-style: solid;
+    border-left-width: 6px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.button-ease-in {
+    padding: 0.3em 1.5em;
+    transition: all 0.5s ease;
+    background: linear-gradient(to left, #0d6efd 50%, #2e86c1 50%);
+    color: white;
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+    .button-ease-in:hover {
+        background-position: left bottom;
         color: white;
     }

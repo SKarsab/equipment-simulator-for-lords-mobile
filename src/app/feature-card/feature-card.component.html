@@ -1,0 +1,24 @@
+<div class="d-flex">
+    
+    <!-- Image -->
+    <div class="image-wrapper m-3 hidden-mobile" [hidden]="position">
+        <img class="b-rounded box-shadow img-fluid" style="min-height: 200px;" src={{imagePath}} />
+    </div>
+
+    <!-- Feature Card -->
+    <div class="bg-dark card-wrapper b-rounded m-3 box-shadow b-left-coloured" [ngStyle]="{'border-color': colour}">
+        <h3 class="text-white p-2">{{title}}</h3>
+        <p class="text-white ps-2 pe-2">{{description}}</p>
+        
+        <div class="d-flex justify-content-end me-2">
+            <a class="btn button-ease-in d-flex" routerLink={{navigationPath}}>Go to Feature 
+                <span class="material-symbols-outlined align-self-center p-0">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Image -->
+    <div class="image-wrapper m-3 hidden-mobile" [hidden]="!position">
+        <img class="b-rounded box-shadow img-fluid" style="min-height: 200px;" src={{imagePath}} />
+    </div>
+</div>

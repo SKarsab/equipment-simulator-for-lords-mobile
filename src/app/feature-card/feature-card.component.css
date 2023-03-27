@@ -1,0 +1,15 @@
+.card-wrapper {
+    width: 60vw;
+    min-height: 200px;
+}
+
+.image-wrapper {
+    width: 35vw;
+    min-height: 200px;
+}
+
+@media (max-width: 991px) {
+    .hidden-mobile {
+      display: none;
+    }
+}

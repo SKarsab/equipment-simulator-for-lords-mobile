@@ -7,5 +7,5 @@ import { HOME_ROUTE } from '../../../utilities/constants';
   styleUrls: ['./faq.component.css']
 })
 export class FaqComponent {
-  HOME_PATH = HOME_ROUTE;
+  HOME_PATH:string = HOME_ROUTE;
 }

@@ -5,3 +5,40 @@
         color: white;
         background: #686868 50%;
     }
+
+/* .nav {
+    cursor:pointer;
+    color: black; 
+    text-decoration: none;
+    font-weight: 600;
+}
+    .nav:hover {
+        color: white;
+    } */
+
+/* .nav-position-top {
+    top: 0%;
+    position: absolute;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.banner-img {
+    background-image: url('../../assets/images/shared/banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 65px;
+    filter: blur(1px);
+}
+
+.bg-z {
+    z-index: -1;
+}
+
+.fg-z {
+    z-index: 1;
+} */

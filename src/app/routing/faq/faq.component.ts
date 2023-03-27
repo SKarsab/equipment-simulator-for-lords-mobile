@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HOME_ROUTE } from '../../../utilities/constants';
 
 @Component({
   selector: 'app-faq',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./faq.component.css']
 })
 export class FaqComponent {
-
+  HOME_PATH = HOME_ROUTE;
 }

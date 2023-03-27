@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HOME_ROUTE } from '../../../utilities/constants';
 
 @Component({
   selector: 'app-guides',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./guides.component.css']
 })
 export class GuidesComponent {
-
+  HOME_PATH = HOME_ROUTE;
 }

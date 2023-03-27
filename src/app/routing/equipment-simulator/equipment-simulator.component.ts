@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HOME_ROUTE } from '../../../utilities/constants';
 
 @Component({
   selector: 'app-equipment-simulator',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./equipment-simulator.component.css']
 })
 export class EquipmentSimulatorComponent {
-
+  HOME_PATH = HOME_ROUTE;
 }

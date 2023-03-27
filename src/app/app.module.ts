@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { EquipmentSelectComponent } from './equipment-select/equipment-select.component';
 import { EquipmentSimulatorComponent } from './routing/equipment-simulator/equipment-simulator.component';
 import { HomeComponent } from './routing/home/home.component';
+import { GuidesComponent } from './routing/guides/guides.component';
+import { FaqComponent } from './routing/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HomeComponent } from './routing/home/home.component';
     FooterComponent,
     EquipmentSelectComponent,
     EquipmentSimulatorComponent,
-    HomeComponent
+    HomeComponent,
+    GuidesComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,16 @@
-.card-wrapper {
-    width: 60vw;
-    min-height: 200px;
+.checkered {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.image-wrapper {
-    width: 35vw;
-    min-height: 200px;
+.title-underline {
+    border-bottom: 2px solid;
 }
 
-@media (max-width: 991px) {
-    .hidden-mobile {
-      display: none;
+.feature-link {
+    color: goldenrod;
+    text-decoration: none;
+    cursor: pointer;
+}
+    .feature-link:hover {
+        color: white;
     }
-}

@@ -1,3 +1,8 @@
+/* DEBUG */
+/* * { 
+    border: 1px solid red;
+} */
+
 /* Page Structure Classes */
 .viewport-height {
     min-height: calc(100vh - 160px);
@@ -5,10 +10,38 @@
 
 .breadcrumb-wrapper {
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (max-width: 1150px) {
+    .hidden-mobile {
+      display: none;
+    }
+}
+
+.show-mobile { 
+    display: none;
+}
+
+@media only screen
+and (max-device-width : 1150px){ 
+    .show-mobile {
+        display: block;
+    }
 }
 
 /* Shared Style Classes */
+.font-type {
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.fg-colour {
+    background-color: #111112;
+}
+
+.mg-colour {
+    background: #191919;
+}
+
 .underline {
     position: relative;
 }

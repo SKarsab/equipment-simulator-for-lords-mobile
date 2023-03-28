@@ -1,0 +1,62 @@
+.to-neutral-900 {
+    --tw-gradient-to: #171717;
+}
+
+.from-neutral-800 {
+    --tw-gradient-from: #262626;
+    --tw-gradient-to: rgb(38 38 38 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.bg-gradient-to-br {
+    background-image: linear-gradient(to bottom right,var(--tw-gradient-stops));
+}
+
+.image-parallelogram {
+-webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.image-properties {
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+}
+
+.big-text {
+    font-size: 3vw;
+}
+
+.text-shadow {
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+}
+
+.text-gradient {
+    background-color: rgb(230,171,31);
+    background-image: linear-gradient(45deg, rgba(230,171,31,1) 0%, rgba(207,130,30,1) 50%, rgba(201,30,30,1) 100%) !important;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.text-trans {
+    transform: translate(5vw, 10vh);
+    max-width: 800px;
+}
+
+.bg-z {
+    z-index: 0;
+}
+
+.fg-z {
+    z-index: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 5px;
+}

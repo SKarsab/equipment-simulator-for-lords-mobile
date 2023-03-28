@@ -1,22 +1,51 @@
-<div class="viewport-height">
+<div class="viewport-height bg-dark bg-gradient-to-br from-neutral-800 to-neutral-900">
 
     <!-- Breadcrumb Spacer -->
-    <div class="bg-dark">
+    <div class="fg-colour">
         <div class="breadcrumb-wrapper p-1"></div>
     </div>
 
-    <div class="d-flex align-items-center mt-3">
+    <!-- HIDE THIS ON MOBILE -->
+    <div class="hidden-mobile">
+        <div class="container-fluid d-flex">
+            
+            <!-- Landing Text -->
+            <div class="d-flex flex-column text-trans fg-z">
+                <div class="ms-5 mt-5">
+                    <h1 class="text-white fw-bold big-text text-shadow">The best place for <span class="text-gradient">Lords Mobile</span> strategy</h1>
+                    <h5 class="text-white text-shadow">Equipment Simulator for Lords Mobile is the go to place for builds, set comparisons, and guides so you can always play at your best.</h5>
+                </div>
+            </div>
+
+            <!-- Landing Image -->
+            <div class="w-100 bg-z">
+                <div class="me-5 mt-5">
+                    <img class="image-properties image-parallelogram box-shadow img-fluid me-5" src="../../../assets/images/shared/homePageFeature.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SHOW THIS ON MOBILE -->
+    <div class="mt-5 mb-5 show-mobile">
         <div class="container">
-            <div class="" *ngFor="let feature of features">
-                <app-feature-card 
+            <h1 class="text-white fw-bold big-text text-shadow text-center">The best place for <span class="text-gradient">Lords Mobile</span> help</h1>
+            <h5 class="text-white text-shadow text-center">Equipment Simulator for Lords Mobile is the go to place for builds, set comparisons, and guides so you can always play at your best.</h5>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container">
+        <h1 class="text-white text-center mt-5">Explore</h1>
+
+        <div class="grid p-2">
+            <app-feature-card *ngFor="let feature of features"
                 [title]="feature.title" 
                 [description]="feature.description" 
-                [position]="feature.position"
-                [imagePath]="feature.imagePath"
+                [checkered]="feature.checkered"
                 [colour]="feature.colour"
                 [navigationPath]="feature.navigationPath">
             </app-feature-card>
-            </div>
         </div>
     </div>
 </div>

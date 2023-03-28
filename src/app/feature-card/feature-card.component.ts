@@ -8,8 +8,7 @@ import { Component, Input } from '@angular/core';
 export class FeatureCardComponent {
   @Input() title!: string;
   @Input() description!: string;
-  @Input() position!: boolean;
-  @Input() imagePath!: string;
+  @Input() checkered!: boolean;
   @Input() colour!: string;
   @Input() navigationPath!: string;
 

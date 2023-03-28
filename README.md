@@ -13,21 +13,7 @@ Bootstrap: 5.2.3
 ### Current Progress ###
 - [x] Home Page
 - [ ] Equipment Simulator
+- [ ] Builds and Benchmarks
 - [ ] Guides
 - [ ] About
 - [x] Database Design
-
-## :camera: Page Mockups ##
-#### Landing Page Preview: ####
-![Home Page](https://cdn.discordapp.com/attachments/338878617754796032/1089766415197798430/Home_Page_Desktop.png)
-
-#### Equipment Page Preview: ####
-![Home Page](https://cdn.discordapp.com/attachments/338878617754796032/1089766415642407043/Equipment_Simulator_Desktop.png)
-
-#### Guides Page Preview: ####
-![Home Page](https://cdn.discordapp.com/attachments/338878617754796032/1089766416053440522/Guides_Page_Desktop.png)
-
-#### Mobile Preview: ####
-![Home Page](https://cdn.discordapp.com/attachments/338878617754796032/1089766415432683530/Home_Page_Mobile.png)
-![Home Page](https://cdn.discordapp.com/attachments/338878617754796032/1089766415847915691/Equipment_Simulator_Mobile.png)
-![Home Page](https://cdn.discordapp.com/attachments/338878617754796032/1089766416305106974/Guides_Page_Mobile.png)

@@ -1,0 +1,16 @@
+.equipmentSize {
+    width: 100px;
+    height: 100px;
+}
+
+.jewelSize {
+    width: 33.3px;
+    height: 33.3px;
+}
+
+.equipmentButton {
+    cursor: pointer;
+}
+    .equipmentButton:hover {
+        opacity: 0.5;
+    }

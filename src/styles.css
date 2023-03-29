@@ -29,7 +29,33 @@ and (max-device-width : 1150px){
     }
 }
 
+.bg-z {
+    z-index: 0;
+}
+
+.mg-z {
+    z-index: 1;
+}
+
+.fg-z {
+    z-index: 2;
+}
+
 /* Shared Style Classes */
+.to-neutral-900 {
+    --tw-gradient-to: #171717;
+}
+
+.from-neutral-800 {
+    --tw-gradient-from: #262626;
+    --tw-gradient-to: rgb(38 38 38 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.bg-gradient-to-br {
+    background-image: linear-gradient(to bottom right,var(--tw-gradient-stops));
+}
+
 .font-type {
     font-family: 'proxima-nova', sans-serif;
 }

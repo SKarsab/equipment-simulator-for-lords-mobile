@@ -1,4 +1,4 @@
-<div class="viewport-height">
+<div class="viewport-height bg-dark bg-gradient-to-br from-neutral-800 to-neutral-900">
 
     <!-- Breadcrumb -->
     <div class="fg-colour">
@@ -12,5 +12,100 @@
         </div>
     </div>
 
-    <p>Equipment Simulator Component</p>
+    <!-- Equipment Slots -->
+    <div class="d-flex mt-3">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot slotName="{{ equipmentSlotList[0].slotName }}" buttonImgPath="{{ equipmentSlotList[0].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot slotName="{{ equipmentSlotList[1].slotName }}" buttonImgPath="{{ equipmentSlotList[1].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot slotName="{{ equipmentSlotList[2].slotName }}" buttonImgPath="{{ equipmentSlotList[2].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot slotName="{{ equipmentSlotList[3].slotName }}" buttonImgPath="{{ equipmentSlotList[3].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot slotName="{{ equipmentSlotList[4].slotName }}" buttonImgPath="{{ equipmentSlotList[4].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot slotName="{{ equipmentSlotList[5].slotName }}" buttonImgPath="{{ equipmentSlotList[5].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot slotName="{{ equipmentSlotList[6].slotName }}" buttonImgPath="{{ equipmentSlotList[6].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot slotName="{{ equipmentSlotList[7].slotName }}" buttonImgPath="{{ equipmentSlotList[7].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="center-img mg-z img-fluid hidden-hero-mobile"></div>
+
+        <!-- DEBUG
+        TODO: REMOVE DEBUG CLASS AND FIX SIZE/RESPONSIVE POSITION -->
+        <!-- Stats Window -->
+        <div class="fg-colour b-rounded debug-size mt-4 me-4 mb-4">
+            <p class="text-white ps-2 fs-5">Stats Window:</p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="equipmentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title text-white">{{slotName}}</h5>
+
+                <div class="ml-20">
+                    <div class="m-0">
+                        <p class="text-white m-0">Rarity:</p>
+                    </div>
+                    <div class="m-0">
+                        <button type="button" class="btn white" (click)="changeRarity('Common')"></button>
+                        <button type="button" class="btn green" (click)="changeRarity('Uncommon')"></button>
+                        <button type="button" class="btn blue" (click)="changeRarity('Rare')"></button>
+                        <button type="button" class="btn purple" (click)="changeRarity('Epic')"></button>
+                        <button type="button" class="btn gold" (click)="changeRarity('Legendary')"></button>
+                        <button type="button" class="btn orange" (click)="changeRarity('Mythic')"></button>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-white">{{slotName}}:</p>
+                        <div class="d-flex flex-settings">
+                            <button type="button" class="btn p-1" *ngFor="let equipment of equipmentArray" (click)="equipmentSelected(equipment.tooltip)">
+                                <img class="modal-img-size" src="{{ equipment.imgPath }}" alt="equipmentChoice"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ equipment.tooltip }}">
+                            </button>
+                        </div>
+
+                        <p class="text-white">Jewels:</p>
+                        <div class="d-flex flex-settings">
+                            <button type="button" class="btn p-1" *ngFor="let jewel of jewelsArray" (click)="jewelSelected(jewel.tooltip)">
+                                <img class="modal-img-size" src="{{ jewel.imgPath }}" alt="equipmentChoice"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ jewel.tooltip }}">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>

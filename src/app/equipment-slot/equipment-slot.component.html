@@ -1,0 +1,18 @@
+<div class="d-flex flex-column equipmentButton box-shadow">
+    <div class="fg-z">
+        <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#equipmentModal" (click)="emitEquipmentType()">
+            <img src="{{ buttonImgPath }}" alt="EquipmentSlot" class="equipmentSize">
+        </button>
+    </div>
+    <div class="d-flex fg-z">
+        <div class="">
+            <img src="{{ currentJewelSlot1 }}" alt="JewelSlot1" class="jewelSize">
+        </div>
+        <div class="">
+            <img src="{{ currentJewelSlot2 }}" alt="JewelSlot2" class="jewelSize">
+        </div>
+        <div class="">
+            <img src="{{ currentJewelSlot3 }}" alt="JewelSlot3" class="jewelSize">
+        </div>
+    </div>
+</div>

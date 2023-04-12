@@ -17,34 +17,90 @@
         <div class="container">
             <div class="row p-4">
                 <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
-                    <app-equipment-slot slotName="{{ equipmentSlotList[0].slotName }}" buttonImgPath="{{ equipmentSlotList[0].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                    <app-equipment-slot 
+                        slotName="{{ equipmentSlotList[0].slotName }}" 
+                        currentEquipmentImage="{{ equipmentSlotList[0].currentEquipmentImage }}"
+                        currentJewelImage1="{{ equipmentSlotList[0].currentJewelImage1 }}" 
+                        currentJewelImage2="{{ equipmentSlotList[0].currentJewelImage2 }}" 
+                        currentJewelImage3="{{ equipmentSlotList[0].currentJewelImage3 }}"  
+                        (equipmentSelectEvent)="getEquipmentInfo($event)">
+                    </app-equipment-slot>
                 </div>
                 <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
-                    <app-equipment-slot slotName="{{ equipmentSlotList[1].slotName }}" buttonImgPath="{{ equipmentSlotList[1].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
-                </div>
-            </div>
-            <div class="row p-4">
-                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
-                    <app-equipment-slot slotName="{{ equipmentSlotList[2].slotName }}" buttonImgPath="{{ equipmentSlotList[2].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
-                </div>
-                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
-                    <app-equipment-slot slotName="{{ equipmentSlotList[3].slotName }}" buttonImgPath="{{ equipmentSlotList[3].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
-                </div>
-            </div>
-            <div class="row p-4">
-                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
-                    <app-equipment-slot slotName="{{ equipmentSlotList[4].slotName }}" buttonImgPath="{{ equipmentSlotList[4].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
-                </div>
-                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
-                    <app-equipment-slot slotName="{{ equipmentSlotList[5].slotName }}" buttonImgPath="{{ equipmentSlotList[5].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                    <app-equipment-slot 
+                        slotName="{{ equipmentSlotList[1].slotName }}" 
+                        currentEquipmentImage="{{ equipmentSlotList[1].currentEquipmentImage }}"
+                        currentJewelImage1="{{ equipmentSlotList[1].currentJewelImage1 }}"
+                        currentJewelImage2="{{ equipmentSlotList[1].currentJewelImage2 }}"
+                        currentJewelImage3="{{ equipmentSlotList[1].currentJewelImage3 }}" 
+                        (equipmentSelectEvent)="getEquipmentInfo($event)">
+                    </app-equipment-slot>
                 </div>
             </div>
             <div class="row p-4">
                 <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
-                    <app-equipment-slot slotName="{{ equipmentSlotList[6].slotName }}" buttonImgPath="{{ equipmentSlotList[6].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                    <app-equipment-slot 
+                        slotName="{{ equipmentSlotList[2].slotName }}" 
+                        currentEquipmentImage="{{ equipmentSlotList[2].currentEquipmentImage }}"
+                        currentJewelImage1="{{ equipmentSlotList[2].currentJewelImage1 }}"
+                        currentJewelImage2="{{ equipmentSlotList[2].currentJewelImage2 }}"
+                        currentJewelImage3="{{ equipmentSlotList[3].currentJewelImage3 }}" 
+                        (equipmentSelectEvent)="getEquipmentInfo($event)">
+                    </app-equipment-slot>
                 </div>
                 <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
-                    <app-equipment-slot slotName="{{ equipmentSlotList[7].slotName }}" buttonImgPath="{{ equipmentSlotList[7].imagePath }}" (equipmentType)="loadEquipment($event)"></app-equipment-slot>
+                    <app-equipment-slot 
+                        slotName="{{ equipmentSlotList[3].slotName }}" 
+                        currentEquipmentImage="{{ equipmentSlotList[3].currentEquipmentImage }}"
+                        currentJewelImage1="{{ equipmentSlotList[3].currentJewelImage1 }}"
+                        currentJewelImage2="{{ equipmentSlotList[3].currentJewelImage2 }}"
+                        currentJewelImage3="{{ equipmentSlotList[3].currentJewelImage3 }}"
+                        (equipmentSelectEvent)="getEquipmentInfo($event)">
+                    </app-equipment-slot>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot 
+                        slotName="{{ equipmentSlotList[4].slotName }}" 
+                        currentEquipmentImage="{{ equipmentSlotList[4].currentEquipmentImage }}"
+                        currentJewelImage1="{{ equipmentSlotList[4].currentJewelImage1 }}"
+                        currentJewelImage2="{{ equipmentSlotList[4].currentJewelImage2 }}"
+                        currentJewelImage3="{{ equipmentSlotList[4].currentJewelImage3 }}"
+                        (equipmentSelectEvent)="getEquipmentInfo($event)">
+                    </app-equipment-slot>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot 
+                        slotName="{{ equipmentSlotList[5].slotName }}" 
+                        currentEquipmentImage="{{ equipmentSlotList[5].currentEquipmentImage }}"
+                        currentJewelImage1="{{ equipmentSlotList[5].currentJewelImage1 }}"
+                        currentJewelImage2="{{ equipmentSlotList[5].currentJewelImage2 }}"
+                        currentJewelImage3="{{ equipmentSlotList[5].currentJewelImage3 }}" 
+                        (equipmentSelectEvent)="getEquipmentInfo($event)">
+                    </app-equipment-slot>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot 
+                        slotName="{{ equipmentSlotList[6].slotName }}" 
+                        currentEquipmentImage="{{ equipmentSlotList[6].currentEquipmentImage }}"
+                        currentJewelImage1="{{ equipmentSlotList[6].currentJewelImage1 }}"
+                        currentJewelImage2="{{ equipmentSlotList[6].currentJewelImage2 }}"
+                        currentJewelImage3="{{ equipmentSlotList[6].currentJewelImage3 }}"
+                        (equipmentSelectEvent)="getEquipmentInfo($event)">
+                    </app-equipment-slot>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <app-equipment-slot 
+                        slotName="{{ equipmentSlotList[7].slotName }}" 
+                        currentEquipmentImage="{{ equipmentSlotList[7].currentEquipmentImage }}"
+                        currentJewelImage1="{{ equipmentSlotList[7].currentJewelImage1 }}"
+                        currentJewelImage2="{{ equipmentSlotList[7].currentJewelImage2 }}"
+                        currentJewelImage3="{{ equipmentSlotList[7].currentJewelImage3 }}"
+                        (equipmentSelectEvent)="getEquipmentInfo($event)">
+                    </app-equipment-slot>
                 </div>
             </div>
         </div>

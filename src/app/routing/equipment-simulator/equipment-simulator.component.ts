@@ -24,14 +24,14 @@ export class EquipmentSimulatorComponent {
   HOME_PATH:string = HOME_ROUTE;
 
   equipmentSlotList: EquipmentSlot[] = [
-    new EquipmentSlot("Mainhand", "./../../assets/Images/Equipment/mainHand.png"),
-    new EquipmentSlot("Offhand", "./../../assets/Images/Equipment/offHand.PNG"),
-    new EquipmentSlot("Helmet", "./../../assets/Images/Equipment/helmet.PNG"),
-    new EquipmentSlot("Accessory", "./../../assets/Images/Equipment/equipmentSlot.PNG"),
-    new EquipmentSlot("Chest", "./../../assets/Images/Equipment/chest.PNG"),
-    new EquipmentSlot("Accessory", "./../../assets/Images/Equipment/equipmentSlot.PNG"),
-    new EquipmentSlot("Boots", "./../../assets/Images/Equipment/boots.PNG"),
-    new EquipmentSlot("Accessory", "./../../assets/Images/Equipment/equipmentSlot.PNG")
+    new EquipmentSlot("Mainhand", "./../../assets/Images/Equipment/mainHand.png", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
+    new EquipmentSlot("Offhand", "./../../assets/Images/Equipment/offHand.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
+    new EquipmentSlot("Helmet", "./../../assets/Images/Equipment/helmet.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
+    new EquipmentSlot("Accessory", "./../../assets/Images/Equipment/equipmentSlot.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
+    new EquipmentSlot("Chest", "./../../assets/Images/Equipment/chest.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
+    new EquipmentSlot("Accessory", "./../../assets/Images/Equipment/equipmentSlot.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
+    new EquipmentSlot("Boots", "./../../assets/Images/Equipment/boots.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
+    new EquipmentSlot("Accessory", "./../../assets/Images/Equipment/equipmentSlot.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG")
   ];
 
   equipmentArray: iEquipment[] = EquipmentJson.Mainhand.Mythic;
@@ -50,7 +50,13 @@ export class EquipmentSimulatorComponent {
     this.sigils = JSON.parse(JSON.stringify(SigilsJson));
   }
 
-  loadEquipment(type: string)
+  getEquipmentInfo(type: string)
+  {
+    //Fetch from backend
+    this.populateModal(type);
+  }
+
+  populateModal(type: string)
   {
     //Change modal content
     this.slotName = type;
@@ -84,15 +90,24 @@ export class EquipmentSimulatorComponent {
   equipmentSelected(equipment: string)
   {
     console.log(equipment);
+
+    //Send imgPath to child component to show change
+    //Add stats to stats window
   }
 
   jewelSelected(jewel: string)
   {
     console.log(jewel);
+
+    //Send imgPath to child component to show change
+    //Add stats to stats window
   }
 
   sigilSelected(sigil: string)
   {
     console.log(sigil);
+
+    //Send imgPath to child component to show change
+    //Add stats to stats window
   }
 }

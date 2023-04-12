@@ -1,0 +1,97 @@
+{
+    "Mainhand" : {
+        "Mythic" : [
+            {
+                "tooltip": "Frostwing Greatsword",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/frostwing.png"
+            },
+            {
+                "tooltip": "Wyrm Rod",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/jade.png"
+            },
+            {
+                "tooltip": "Terror Lash",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/terror.png"
+            },
+            {
+                "tooltip": "Horn Cudgel",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/gargantua.png"
+            },
+            {
+                "tooltip": "Skullcrusher",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/helldrider.png"
+            },
+            {
+                "tooltip": "Malicious Saw",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/mecha.png"
+            },
+            {
+                "tooltip": "Nectar Orb",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/queenBee.png"
+            },
+            {
+                "tooltip": "Decadent Sword",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/bon.png"
+            },
+            {
+                "tooltip": "Kraken's Anchor",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/tidalTitan.png"
+            },
+            {
+                "tooltip": "Ghastly Cane",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/cottageroar.png"
+            },
+            {
+                "tooltip": "Eon Axe",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/gawrilla.png"
+            },
+            {
+                "tooltip": "Champion Edge",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/champ1.png"
+            },
+            {
+                "tooltip": "Champion Blade",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/champ2.png"
+            },
+            {
+                "tooltip": "Champion Greatsword",
+                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/champ3.png"
+            }
+        ],
+
+        "Legendary": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Epic": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Rare": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Uncommon": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ],
+    
+        "Common": [
+            {
+                "tooltip": "Wyrmbone Coronet",
+                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+            }
+        ]
+    }
+}

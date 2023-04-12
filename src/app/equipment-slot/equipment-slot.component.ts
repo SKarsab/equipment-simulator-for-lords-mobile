@@ -7,26 +7,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class EquipmentSlotComponent {
 
-  @Input() slotName: string = "";
-  @Input() buttonImgPath: string = "";
+  @Input() slotName!:string;
+  @Input() currentEquipmentImage!:string;
+  @Input() currentJewelImage1!:string;
+  @Input() currentJewelImage2!:string;
+  @Input() currentJewelImage3!:string;
 
-  defaultJewelSlot: string = "./../../assets/Images/Equipment/jewel.PNG";
-  defaultSigilSlot: string = "./../../assets/Images/Equipment/jewel.PNG";
-
-  currentJewelSlot1: string;
-  currentJewelSlot2: string;
-  currentJewelSlot3: string;
-
-  //@Output() equipmentType: EventEmitter<string> = new EventEmitter()
-  @Output() equipmentType = new EventEmitter<string>();
-
-  constructor() { 
-    this.currentJewelSlot1 = this.defaultJewelSlot;
-    this.currentJewelSlot2 = this.defaultJewelSlot;
-    this.currentJewelSlot3 = this.defaultJewelSlot;
-  }
+  @Output() equipmentSelectEvent = new EventEmitter<string>();
 
   emitEquipmentType() {
-    this.equipmentType.emit(this.slotName);
+    this.equipmentSelectEvent.emit(this.slotName);
   }
 }

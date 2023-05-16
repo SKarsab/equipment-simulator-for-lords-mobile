@@ -1,3 +1,6 @@
+// PURPOSE : Landing page for the application. Displays a pseudo hero image, header, features 
+//           and navigation to all available pages
+
 import { Component } from '@angular/core';
 import { Feature } from '../../feature-card/feature.model';
 import { SIMULATOR_ROUTE, BENCHMARKS_ROUTE, GUIDES_ROUTE, FAQ_ROUTE } from '../../../utilities/constants';

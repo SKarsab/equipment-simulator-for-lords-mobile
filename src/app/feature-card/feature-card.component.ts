@@ -1,3 +1,6 @@
+// PURPOSE : Component that creates one feature on the home page. Current features are "Equipment Simulator", 
+//           "Builds and BEnchmarks", "Guides". and "About".
+
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -8,7 +11,7 @@ import { Component, Input } from '@angular/core';
 export class FeatureCardComponent {
   @Input() title!: string;
   @Input() description!: string;
-  @Input() checkered!: boolean;
+  @Input() checkered!: boolean; //Dark grey background if true, normal page background if false
   @Input() colour!: string;
   @Input() navigationPath!: string;
 

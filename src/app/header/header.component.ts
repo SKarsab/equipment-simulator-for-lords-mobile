@@ -1,3 +1,5 @@
+// PURPOSE : Simple header for additional page navigation
+
 import { Component } from '@angular/core';
 import { HOME_ROUTE, SIMULATOR_ROUTE, BENCHMARKS_ROUTE, GUIDES_ROUTE, FAQ_ROUTE } from '../../utilities/constants';
 

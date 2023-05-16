@@ -1,3 +1,7 @@
+// PURPOSE : Component that creates one selectable equipment slot on the equipment simulator page. Each slot 
+//           has 1 equipment option, and 3 jewel options. When clicked, the slot type (E.g. "Chest") is emitted
+//           to the equipment-simulator component which fetches data from the backend and populates the modal
+
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({

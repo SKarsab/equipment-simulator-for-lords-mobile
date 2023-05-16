@@ -142,15 +142,15 @@
                     <div class="col-12">
                         <p class="text-white">{{slotName}}:</p>
                         <div class="d-flex flex-settings">
-                            <button type="button" class="btn p-1" *ngFor="let equipment of equipmentArray" (click)="equipmentSelected(equipment.name)">
+                            <button type="button" class="btn p-1" *ngFor="let equipment of equipmentArray" (click)="equipmentSelected(equipment.name)" [ngStyle]="{'background-color': equipmentColour}">
                                 <img class="modal-img-size" src="{{ BASE_IMAGE_PATH + equipment.type + equipment.imgPath }}" alt="equipmentChoice"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ equipment.name }}">
                             </button>
                         </div>
 
                         <p class="text-white">Jewels:</p>
                         <div class="d-flex flex-settings">
-                            <button type="button" class="btn p-1" *ngFor="let jewel of jewelsArray" (click)="jewelSelected(jewel.name)">
-                                <img class="modal-img-size" src="{{ jewel.imgPath }}" alt="equipmentChoice"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ jewel.name }}">
+                            <button type="button" class="btn p-1" *ngFor="let jewel of jewelsArray" (click)="jewelSelected(jewel.name)" [ngStyle]="{'background-color': jewelColour}">
+                                <img class="modal-img-size" src="{{ BASE_IMAGE_PATH + jewel.type + jewel.imgPath }}" alt="equipmentChoice"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ jewel.name }}">
                             </button>
                         </div>
                     </div>

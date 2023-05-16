@@ -1,629 +1,4670 @@
-{
-    "Mainhand" : {
-        "Mythic" : [
+[
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Frostwing Greatsword",
+        "imgPath": "/frostwing.webp",
+        "stats": [
             {
-                "tooltip": "Frostwing Greatsword",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/frostwing.png"
+                "name": "Infantry Atk",
+                "value": 28.00
             },
             {
-                "tooltip": "Wyrm Rod",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/jade.png"
+                "name": "Cavalry Atk",
+                "value": 28.00
             },
             {
-                "tooltip": "Terror Lash",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/terror.png"
-            },
-            {
-                "tooltip": "Horn Cudgel",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/gargantua.png"
-            },
-            {
-                "tooltip": "Skullcrusher",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/helldrider.png"
-            },
-            {
-                "tooltip": "Malicious Saw",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/mecha.png"
-            },
-            {
-                "tooltip": "Nectar Orb",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/queenBee.png"
-            },
-            {
-                "tooltip": "Decadent Sword",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/bon.png"
-            },
-            {
-                "tooltip": "Kraken's Anchor",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/tidalTitan.png"
-            },
-            {
-                "tooltip": "Ghastly Cane",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/cottageroar.png"
-            },
-            {
-                "tooltip": "Eon Axe",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/gawrilla.png"
-            },
-            {
-                "tooltip": "Champion Edge",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/champ1.png"
-            },
-            {
-                "tooltip": "Champion Blade",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/champ2.png"
-            },
-            {
-                "tooltip": "Champion Greatsword",
-                "imgPath": "./../../../assets/Images/Equipment/Mainhands/Mythic/champ3.png"
-            }
-        ],
-
-        "Legendary": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Epic": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Rare": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Uncommon": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Common": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Ranged Atk",
+                "value": 17.50
             }
         ]
     },
-
-    "Offhand" : {
-        "Mythic": [
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Wyrm Rod",
+        "imgPath": "/jade.webp",
+        "stats": [
             {
-                "tooltip": "Winter Mitts",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/snowBeast.png"
+                "name": "Ranged Atk",
+                "value": 35.00
             },
             {
-                "tooltip": "Dark Aegis",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/helldrider.png"
+                "name": "Ranged Max Hp",
+                "value": 24.50
             },
             {
-                "tooltip": "Eternal Codex",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/grim.png"
-            },
-            {
-                "tooltip": "Dragon's Fist",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/blackwing.png"
-            },
-            {
-                "tooltip": "Viral Switchblade",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/mecha.png"
-            },
-            {
-                "tooltip": "Call of the Deep",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/tidalTitan.png"
-            },
-            {
-                "tooltip": "Lunar Boomerang",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/hootclaw.png"
-            },
-            {
-                "tooltip": "Erie Lantern",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/cottageroar.png"
-            },
-            {
-                "tooltip": "Spirit Axe",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/necrosis.png"
-            },
-            {
-                "tooltip": "Champion Lamp",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/champ1.png"
-            },
-            {
-                "tooltip": "Champion Light",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/champ2.png"
-            },
-            {
-                "tooltip": "Champion Katar",
-                "imgPath": "./../../../assets/Images/Equipment/Offhands/Mythic/champ3.png"
-            }
-        ],
-
-        "Legendary": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Epic": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Rare": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Uncommon": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Common": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Timber Production Rate",
+                "value": 70.00
             }
         ]
     },
-
-    "Helmet" : {
-        "Mythic": [
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Terror Lash",
+        "imgPath": "/terror.webp",
+        "stats": [
             {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Infantry Atk",
+                "value": 38.50
             },
             {
-                "tooltip": "Ancient Hat",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/grim.png"
+                "name": "Infantry Def",
+                "value": 14.00
             },
             {
-                "tooltip": "Beast Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/saber.png"
+                "name": "Construction Speed",
+                "value": 14.00
             },
             {
-                "tooltip": "Bumblehelm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/queenBee.png"
-            },
-            {
-                "tooltip": "Champion Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/champ1.png"
-            },
-            {
-                "tooltip": "Champion Visor",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/champ2.png"
-            },
-            {
-                "tooltip": "Champion Armet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/champ3.png"
-            }
-        ],
-
-        "Legendary": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/jade.png"
-            },
-            {
-                "tooltip": "Ancient Hat",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/grim.png"
-            },
-            {
-                "tooltip": "Beast Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/saber.png"
-            },
-            {
-                "tooltip": "Bumblehelm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/queenBee.png"
-            },
-            {
-                "tooltip": "Champion Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/champ1.png"
-            },
-            {
-                "tooltip": "Champion Visor",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/champ2.png"
-            },
-            {
-                "tooltip": "Champion Armet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Legendary/champ3.png"
-            }
-        ],
-    
-        "Epic": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/jade.png"
-            },
-            {
-                "tooltip": "Ancient Hat",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/grim.png"
-            },
-            {
-                "tooltip": "Beast Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/saber.png"
-            },
-            {
-                "tooltip": "Bumblehelm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/queenBee.png"
-            },
-            {
-                "tooltip": "Champion Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/champ1.png"
-            },
-            {
-                "tooltip": "Champion Visor",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/champ2.png"
-            },
-            {
-                "tooltip": "Champion Armet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Epic/champ3.png"
-            }
-        ],
-    
-        "Rare": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/jade.png"
-            },
-            {
-                "tooltip": "Ancient Hat",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/grim.png"
-            },
-            {
-                "tooltip": "Beast Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/saber.png"
-            },
-            {
-                "tooltip": "Bumblehelm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/queenBee.png"
-            },
-            {
-                "tooltip": "Champion Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/champ1.png"
-            },
-            {
-                "tooltip": "Champion Visor",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/champ2.png"
-            },
-            {
-                "tooltip": "Champion Armet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Rare/champ3.png"
-            }
-        ],
-    
-        "Uncommon": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/jade.png"
-            },
-            {
-                "tooltip": "Ancient Hat",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/grim.png"
-            },
-            {
-                "tooltip": "Beast Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/saber.png"
-            },
-            {
-                "tooltip": "Bumblehelm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/queenBee.png"
-            },
-            {
-                "tooltip": "Champion Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/champ1.png"
-            },
-            {
-                "tooltip": "Champion Visor",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/champ2.png"
-            },
-            {
-                "tooltip": "Champion Armet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Uncommon/champ3.png"
-            }
-        ],
-    
-        "Common": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/jade.png"
-            },
-            {
-                "tooltip": "Ancient Hat",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/grim.png"
-            },
-            {
-                "tooltip": "Beast Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/saber.png"
-            },
-            {
-                "tooltip": "Bumblehelm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/queenBee.png"
-            },
-            {
-                "tooltip": "Champion Helm",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/champ1.png"
-            },
-            {
-                "tooltip": "Champion Visor",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/champ2.png"
-            },
-            {
-                "tooltip": "Champion Armet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Common/champ3.png"
+                "name": "Army Capacity",
+                "value": 28.00
             }
         ]
     },
-
-    "Chest" : {
-        "Mythic": [
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Horn Cudgel",
+        "imgPath": "/gargantua.webp",
+        "stats": [
             {
-                "tooltip": "Terror Shield",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/terror.png"
+                "name": "Cavalry Atk",
+                "value": 42.00
             },
             {
-                "tooltip": "Deathly Mantle",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/grim.png"
+                "name": "Cavalry Def",
+                "value": 21.00
             },
             {
-                "tooltip": "Predator Pauldrons",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/saber.png"
-            },
-            {
-                "tooltip": "Firewall Plate",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/mecha.png"
-            },
-            {
-                "tooltip": "Hardened Carapace",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/queenBee.png"
-            },
-            {
-                "tooltip": "Hedonic Cuirass",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/bon.png"
-            },
-            {
-                "tooltip": "Beastly Breastplate",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/hootclaw.png"
-            },
-            {
-                "tooltip": "Champion Plate",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/champ1.png"
-            },
-            {
-                "tooltip": "Champion Mail",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/champ2.png"
-            },
-            {
-                "tooltip": "Champion Cuirass",
-                "imgPath": "./../../../assets/Images/Equipment/Chest/Mythic/champ3.png"
-            }
-        ],
-
-        "Legendary": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Epic": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Rare": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Uncommon": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Common": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Trap Def",
+                "value": 49.00
             }
         ]
     },
-
-    "Boots" : {
-        "Mythic": [
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Skullcrusher",
+        "imgPath": "/helldrider.webp",
+        "stats": [
             {
-                "tooltip": "Gargantuan Belt",
-                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/gargantua.png"
+                "name": "Ranged Atk",
+                "value": 21.00
             },
             {
-                "tooltip": "Legs of the Deceiver",
-                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/helldrider.png"
+                "name": "Army Atk",
+                "value": 28.00
             },
             {
-                "tooltip": "Untamed Boots",
-                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/saber.png"
-            },
-            {
-                "tooltip": "Dragon's Talon",
-                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/blackwing.png"
-            },
-            {
-                "tooltip": "Storm Tasset",
-                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/tidalTitan.png"
-            },
-            {
-                "tooltip": "Blizzard Pants",
-                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/articFlipper.png"
-            },
-            {
-                "tooltip": "Champion Stride",
-                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/champ1.png"
-            },
-            {
-                "tooltip": "Champion Boots",
-                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/champ2.png"
-            },
-            {
-                "tooltip": "Champion Greaves",
-                "imgPath": "./../../../assets/Images/Equipment/Boots/Mythic/champ3.png"
-            }
-        ],
-
-        "Legendary": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Epic": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Rare": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Uncommon": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
-            }
-        ],
-    
-        "Common": [
-            {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Infantry Def",
+                "value": 35.00
             }
         ]
     },
-
-    "Accessory" : {
-        "Mythic": [
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Ripper Claw",
+        "imgPath": "/saber.webp",
+        "stats": [
             {
-                "tooltip": "Wyrm Seal",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/jade.png"
+                "name": "Cavalry Atk",
+                "value": 28.00
             },
             {
-                "tooltip": "Terror Vial",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/terror.png"
+                "name": "Cavalry Def",
+                "value": 28.00
             },
             {
-                "tooltip": "Fear Drum",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/gargantua.png"
-            },
-            {
-                "tooltip": "Blight Ring",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/maggot.png"
-            },
-            {
-                "tooltip": "Burning Scroll",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/helldrider.png"
-            },
-            {
-                "tooltip": "Ivory Choker",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/saber.png"
-            },
-            {
-                "tooltip": "Dragon's Iris",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/blackwing.png"
-            },
-            {
-                "tooltip": "Secret Totem",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/mecha.png"
-            },
-            {
-                "tooltip": "Ambrosial Cup",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/bon.png"
-            },
-            {
-                "tooltip": "Rowdy Resolve",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/gawrilla.png"
-            },
-            {
-                "tooltip": "Book of the Dead",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/necrosis.png"
-            },
-            {
-                "tooltip": "Polar Ring",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/arcticFlipper.png"
-            },
-            {
-                "tooltip": "Champion Faith",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/champ1.png"
-            },
-            {
-                "tooltip": "Champion Valor",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/champ2.png"
-            },
-            {
-                "tooltip": "Champion Blessing",
-                "imgPath": "./../../../assets/Images/Equipment/Accessory/Mythic/champ3.png"
+                "name": "Travel Speed",
+                "value": 21.00
             }
-        ],
-
-        "Legendary": [
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Malicious Saw",
+        "imgPath": "/mecha.webp",
+        "stats": [
             {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Infantry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 21.00
+            },
+            {
+                "name": "Siege Engine Def",
+                "value": 35.00
             }
-        ],
-    
-        "Epic": [
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Nectar Orb",
+        "imgPath": "/queenBee.webp",
+        "stats": [
             {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 14.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 14.00
             }
-        ],
-    
-        "Rare": [
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Decadent Sword",
+        "imgPath": "/bon.webp",
+        "stats": [
             {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Infantry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 14.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 14.00
             }
-        ],
-    
-        "Uncommon": [
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Kraken's Anchor",
+        "imgPath": "/tidalTitan.webp",
+        "stats": [
             {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Infantry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 18.20
+            },
+            {
+                "name": "Infantry Def",
+                "value": 18.20
             }
-        ],
-    
-        "Common": [
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Ghastly Cane",
+        "imgPath": "/cottageroar.webp",
+        "stats": [
             {
-                "tooltip": "Wyrmbone Coronet",
-                "imgPath": "./../../../assets/Images/Equipment/Helmets/Mythic/jade.png"
+                "name": "Infantry Atk",
+                "value": 45.50
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 14.00
+            },
+            {
+                "name": "Army Def",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Eon Axe",
+        "imgPath": "/gawrilla.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 52.50
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 14.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Champion Edge",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 49.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Def",
+                "value": 23.80
+            },
+            {
+                "name": "Research Speed",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Champion Blade",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Def",
+                "value": 23.80
+            },
+            {
+                "name": "Research Speed",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Mythic",
+        "name": "Champion Greatsword",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Def",
+                "value": 23.80
+            },
+            {
+                "name": "Research Speed",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Frostwing Greatsword",
+        "imgPath": "/frostwing.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 12.50
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Wyrm Rod",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 17.50
+            },
+            {
+                "name": "Timber Production Rate",
+                "value": 50.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Terror Lash",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 27.50
+            },
+            {
+                "name": "Infantry Def",
+                "value": 10.00
+            },
+            {
+                "name": "Construction Speed",
+                "value": 10.00
+            },
+            {
+                "name": "Army Capacity",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Horn Cudgel",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 15.00
+            },
+            {
+                "name": "Trap Def",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Skullcrusher",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Ripper Claw",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 20.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Malicious Saw",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 15.00
+            },
+            {
+                "name": "Siege Engine Def",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Nectar Orb",
+        "imgPath": "/queenBee.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 10.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Decadent Sword",
+        "imgPath": "/bon.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 10.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Kraken's Anchor",
+        "imgPath": "/tidalTitan.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 13.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 13.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Ghastly Cane",
+        "imgPath": "/cottageroar.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 32.50
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 10.00
+            },
+            {
+                "name": "Army Def",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Eon Axe",
+        "imgPath": "/gawrilla.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 37.50
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 10.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Champion Edge",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Def",
+                "value": 17.00
+            },
+            {
+                "name": "Research Speed",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Champion Blade",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Def",
+                "value": 17.00
+            },
+            {
+                "name": "Research Speed",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Legendary",
+        "name": "Champion Greatsword",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Def",
+                "value": 17.00
+            },
+            {
+                "name": "Research Speed",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Frostwing Greatsword",
+        "imgPath": "/frostwing.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 12.50
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 12.50
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 8.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Wyrm Rod",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 11.00
+            },
+            {
+                "name": "Timber Production Rate",
+                "value": 31.50
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Terror Lash",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 18.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 6.00
+            },
+            {
+                "name": "Construction Speed",
+                "value": 6.00
+            },
+            {
+                "name": "Army Capacity",
+                "value": 13.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Horn Cudgel",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 9.45
+            },
+            {
+                "name": "Trap Def",
+                "value": 22.50
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Skullcrusher",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 16.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Ripper Claw",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 13.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Malicious Saw",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 9.50
+            },
+            {
+                "name": "Siege Engine Def",
+                "value": 16.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Nectar Orb",
+        "imgPath": "/queenBee.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 6.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Decadent Sword",
+        "imgPath": "/bon.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 6.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Kraken's Anchor",
+        "imgPath": "/tidalTitan.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 8.35
+            },
+            {
+                "name": "Infantry Def",
+                "value": 8.35
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Ghastly Cane",
+        "imgPath": "/cottageroar.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 20.50
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 6.30
+            },
+            {
+                "name": "Army Def",
+                "value": 9.45
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Eon Axe",
+        "imgPath": "/gawrilla.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 23.65
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 6.30
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 6.30
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Champion Edge",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 22.50
+            },
+            {
+                "name": "Army Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Def",
+                "value": 10.75
+            },
+            {
+                "name": "Research Speed",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Champion Blade",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Def",
+                "value": 10.75
+            },
+            {
+                "name": "Research Speed",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Mainhand",
+        "rarity": "Epic",
+        "name": "Champion Greatsword",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Def",
+                "value": 10.75
+            },
+            {
+                "name": "Research Speed",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Winter Mitts",
+        "imgPath": "/snowBeast.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 45.50
+            },
+            {
+                "name": "Army Def",
+                "value": 35.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Dark Aegis",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Eternal Codex",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 49.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 28.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Dragon's Fist",
+        "imgPath": "/blackwing.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 30.80
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 28.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Viral Switchblade",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Siege Engine Def",
+                "value": 28.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Call of the Deep",
+        "imgPath": "/tidalTitan.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 14.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Lunar Boomerang",
+        "imgPath": "/hootclaw.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 21.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Erie Lantern",
+        "imgPath": "/cottageroar.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Venom Blade",
+        "imgPath": "/serpent.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Champion Lamp",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 49.00
+            },
+            {
+                "name": "Army Def",
+                "value": 28.00
+            },
+            {
+                "name": "Training Speed",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Champion Light",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 49.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Army Def",
+                "value": 28.00
+            },
+            {
+                "name": "Training Speed",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Mythic",
+        "name": "Champion Katar",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 49.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Army Def",
+                "value": 28.00
+            },
+            {
+                "name": "Training Speed",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Winter Mitts",
+        "imgPath": "/snowBeast.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 32.50
+            },
+            {
+                "name": "Army Def",
+                "value": 25.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Dark Aegis",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Eternal Codex",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Dragon's Fist",
+        "imgPath": "/blackwing.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 22.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Viral Switchblade",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Siege Engine Def",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Call of the Deep",
+        "imgPath": "/tidalTitan.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 10.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Lunar Boomerang",
+        "imgPath": "/hootclaw.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 15.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Erie Lantern",
+        "imgPath": "/cottageroar.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Venom Blade",
+        "imgPath": "/serpent.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Champion Lamp",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Army Def",
+                "value": 20.00
+            },
+            {
+                "name": "Training Speed",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Champion Light",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Army Def",
+                "value": 20.00
+            },
+            {
+                "name": "Training Speed",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Legendary",
+        "name": "Champion Katar",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Army Def",
+                "value": 20.00
+            },
+            {
+                "name": "Training Speed",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Winter Mitts",
+        "imgPath": "/snowBeast.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 6.50
+            },
+            {
+                "name": "Infantry Def",
+                "value": 20.50
+            },
+            {
+                "name": "Army Def",
+                "value": 15.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 15.50
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Dark Aegis",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Eternal Codex",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 22.50
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 13.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Dragon's Fist",
+        "imgPath": "/blackwing.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 13.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Viral Switchblade",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Siege Engine Def",
+                "value": 13.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Call of the Deep",
+        "imgPath": "/tidalTitan.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 6.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Lunar Boomerang",
+        "imgPath": "/hootclaw.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 18.90
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 9.45
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 9.45
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Erie Lantern",
+        "imgPath": "/cottageroar.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 18.90
+            },
+            {
+                "name": "Infantry Def",
+                "value": 6.30
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 6.30
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Venom Blade",
+        "imgPath": "/serpent.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 15.75
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 15.75
+            },
+            {
+                "name": "Ranged Def",
+                "value": 6.30
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 6.30
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Champion Lamp",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 22.50
+            },
+            {
+                "name": "Army Def",
+                "value": 13.00
+            },
+            {
+                "name": "Training Speed",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Champion Light",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 22.50
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Army Def",
+                "value": 13.00
+            },
+            {
+                "name": "Training Speed",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Offhand",
+        "rarity": "Epic",
+        "name": "Champion Katar",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 22.50
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Army Def",
+                "value": 13.00
+            },
+            {
+                "name": "Training Speed",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Mythic",
+        "name": "Wyrmbone Coronet",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 45.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 17.50
+            },
+            {
+                "name": "Ranged Def",
+                "value": 28.00
+            },
+            {
+                "name": "Research Speed",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Mythic",
+        "name": "Ancient Hat",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 39.20
+            },
+            {
+                "name": "Army Def",
+                "value": 21.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Mythic",
+        "name": "Beast Helm",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 49.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Mythic",
+        "name": "Bumble Helm",
+        "imgPath": "/queenBee.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 28.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Mythic",
+        "name": "Serpent Helm",
+        "imgPath": "/serpent.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Army Def",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Mythic",
+        "name": "Champion Helm",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 49.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 49.00
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 105.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Mythic",
+        "name": "Champion Visor",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 28.00
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 105.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Mythic",
+        "name": "Champion Armet",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 28.00
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 105.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Legendary",
+        "name": "Wyrmbone Coronet",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 32.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 12.50
+            },
+            {
+                "name": "Ranged Def",
+                "value": 20.00
+            },
+            {
+                "name": "Research Speed",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Legendary",
+        "name": "Ancient Hat",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Army Def",
+                "value": 15.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Legendary",
+        "name": "Beast Helm",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Legendary",
+        "name": "Bumble Helm",
+        "imgPath": "/queenBee.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Legendary",
+        "name": "Serpent Helm",
+        "imgPath": "/serpent.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Army Def",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Legendary",
+        "name": "Champion Helm",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 35.00
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 75.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Legendary",
+        "name": "Champion Visor",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 20.00
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 75.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Legendary",
+        "name": "Champion Armet",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 20.00
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 75.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Epic",
+        "name": "Wyrmbone Coronet",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 8.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 13.00
+            },
+            {
+                "name": "Research Speed",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Epic",
+        "name": "Ancient Hat",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 17.85
+            },
+            {
+                "name": "Army Def",
+                "value": 9.50
+            },
+            {
+                "name": "Ranged Def",
+                "value": 16.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Epic",
+        "name": "Beast Helm",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 9.50
+            },
+            {
+                "name": "Travel Speed",
+                "value": 22.50
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Epic",
+        "name": "Bumble Helm",
+        "imgPath": "/queenBee.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 13.00
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Epic",
+        "name": "Serpent Helm",
+        "imgPath": "/serpent.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 18.90
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 18.90
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 9.45
+            },
+            {
+                "name": "Army Def",
+                "value": 15.75
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Epic",
+        "name": "Champion Helm",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 22.50
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 22.50
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 47.25
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Epic",
+        "name": "Champion Visor",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 13.00
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 47.25
+            }
+        ]
+    },
+    {
+        "type": "Helmet",
+        "rarity": "Epic",
+        "name": "Champion Armet",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 13.00
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 47.25
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Terror Shield",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 49.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 35.00
+            },
+            {
+                "name": "Research Speed",
+                "value": 11.20
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Deathly Mantle",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Trap Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Def",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Predator Pauldrons",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Def",
+                "value": 21.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 28.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Firewall Plate",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Hardened Carapace",
+        "imgPath": "/queenBee.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Army Def",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Hedonic Cuirass",
+        "imgPath": "/bon.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 42.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Beastly Breastplate",
+        "imgPath": "/hootclaw.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 49.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Army Def",
+                "value": 28.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Champion Plate",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 56.00
+            },
+            {
+                "name": "Army Def",
+                "value": 59.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 35.00
+            },
+            {
+                "name": "Reduced Upkeep",
+                "value": 72.80
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Champion Mail",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Def",
+                "value": 49.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Reduced Upkeep",
+                "value": 72.80
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Mythic",
+        "name": "Champion Cuirass",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Def",
+                "value": 49.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Reduced Upkeep",
+                "value": 72.80
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Terror Shield",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 25.00
+            },
+            {
+                "name": "Research Speed",
+                "value": 8.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Deathly Mantle",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Trap Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Def",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Predator Pauldrons",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Def",
+                "value": 15.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 20.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Firewall Plate",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Hardened Carapace",
+        "imgPath": "/queenBee.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Army Def",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Hedonic Cuirass",
+        "imgPath": "/bon.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 30.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Beastly Breastplate",
+        "imgPath": "/hootclaw.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Army Def",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Champion Plate",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 40.00
+            },
+            {
+                "name": "Army Def",
+                "value": 42.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 25.00
+            },
+            {
+                "name": "Reduced Upkeep",
+                "value": 52.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Champion Mail",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Def",
+                "value": 35.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Reduced Upkeep",
+                "value": 52.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Legendary",
+        "name": "Champion Cuirass",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Def",
+                "value": 35.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Reduced Upkeep",
+                "value": 52.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Terror Shield",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 22.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 9.50
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 16.00
+            },
+            {
+                "name": "Research Speed",
+                "value": 5.05
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Deathly Mantle",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Trap Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Def",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Predator Pauldrons",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Def",
+                "value": 9.50
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 13.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 16.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Firewall Plate",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Hardened Carapace",
+        "imgPath": "/queenBee.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Army Def",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Hedonic Cuirass",
+        "imgPath": "/bon.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 19.00
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Beastly Breastplate",
+        "imgPath": "/hootclaw.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 22.05
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 9.45
+            },
+            {
+                "name": "Army Def",
+                "value": 12.60
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Champion Plate",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 26.00
+            },
+            {
+                "name": "Army Def",
+                "value": 26.75
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 16.00
+            },
+            {
+                "name": "Reduced Upkeep",
+                "value": 32.75
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Champion Mail",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Def",
+                "value": 22.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 9.50
+            },
+            {
+                "name": "Reduced Upkeep",
+                "value": 32.75
+            }
+        ]
+    },
+    {
+        "type": "Chest",
+        "rarity": "Epic",
+        "name": "Champion Cuirass",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Def",
+                "value": 22.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 9.50
+            },
+            {
+                "name": "Reduced Upkeep",
+                "value": 32.75
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Mythic",
+        "name": "Gargantuan Belt",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 52.50
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 38.50
+            },
+            {
+                "name": "Army Def",
+                "value": 21.00
+            },
+            {
+                "name": "Stone Production Rate",
+                "value": 70.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Mythic",
+        "name": "Legs of the Deceiver",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 7.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 16.80
+            },
+            {
+                "name": "Ranged Def",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Mythic",
+        "name": "Untamed Boots",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 21.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 42.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Mythic",
+        "name": "Dragon's Talons",
+        "imgPath": "/blackwing.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 28.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Mythic",
+        "name": "Storm Tasset",
+        "imgPath": "/tidalTitan.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Army Def",
+                "value": 28.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Mythic",
+        "name": "Blizzard Pants",
+        "imgPath": "/arcticFlipper.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 42.00
+            },
+            {
+                "name": "Army Def",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 16.80
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Mythic",
+        "name": "Champion Stride",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 56.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 30.80
+            },
+            {
+                "name": "Travel Speed",
+                "value": 70.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Mythic",
+        "name": "Champion Boots",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 56.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 30.80
+            },
+            {
+                "name": "Travel Speed",
+                "value": 70.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Mythic",
+        "name": "Champion Greaves",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 56.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 30.80
+            },
+            {
+                "name": "Travel Speed",
+                "value": 70.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Legendary",
+        "name": "Gargantuan Belt",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 37.50
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 27.50
+            },
+            {
+                "name": "Army Def",
+                "value": 15.00
+            },
+            {
+                "name": "Stone Production Rate",
+                "value": 50.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Legendary",
+        "name": "Legs of the Deceiver",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 12.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Legendary",
+        "name": "Untamed Boots",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 15.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 30.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Legendary",
+        "name": "Dragon's Talons",
+        "imgPath": "/blackwing.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 20.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Legendary",
+        "name": "Storm Tasset",
+        "imgPath": "/tidalTitan.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Army Def",
+                "value": 20.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Legendary",
+        "name": "Blizzard Pants",
+        "imgPath": "/arcticFlipper.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 30.00
+            },
+            {
+                "name": "Army Def",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 12.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Legendary",
+        "name": "Champion Stride",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 40.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 22.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 50.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Legendary",
+        "name": "Champion Boots",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 40.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 22.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 50.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Legendary",
+        "name": "Champion Greaves",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 40.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 22.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 50.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Epic",
+        "name": "Gargantuan Belt",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 24.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 18.00
+            },
+            {
+                "name": "Army Def",
+                "value": 9.50
+            },
+            {
+                "name": "Stone Production Rate",
+                "value": 31.50
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Epic",
+        "name": "Legs of the Deceiver",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 2.50
+            },
+            {
+                "name": "Army Atk",
+                "value": 7.50
+            },
+            {
+                "name": "Ranged Def",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Epic",
+        "name": "Untamed Boots",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 9.50
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 9.50
+            },
+            {
+                "name": "Travel Speed",
+                "value": 19.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Epic",
+        "name": "Dragon's Talons",
+        "imgPath": "/blackwing.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 13.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Epic",
+        "name": "Storm Tasset",
+        "imgPath": "/tidalTitan.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 19.00
+            },
+            {
+                "name": "Army Def",
+                "value": 13.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Epic",
+        "name": "Blizzard Pants",
+        "imgPath": "/arcticFlipper.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 18.90
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 18.90
+            },
+            {
+                "name": "Army Def",
+                "value": 6.30
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 7.55
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Epic",
+        "name": "Champion Stride",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 26.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 14.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 31.50
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Epic",
+        "name": "Champion Boots",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 26.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 14.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 31.50
+            }
+        ]
+    },
+    {
+        "type": "Boots",
+        "rarity": "Epic",
+        "name": "Champion Greaves",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 26.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 14.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 31.50
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Wyrm Seal",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 22.40
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 11.20
+            },
+            {
+                "name": "Stone Production Rate",
+                "value": 49.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Terror Vial",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 22.40
+            },
+            {
+                "name": "Army Def",
+                "value": 11.20
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 7.00
+            },
+            {
+                "name": "Ore Production Rate",
+                "value": 49.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Fear Drum",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 22.40
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 7.70
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 49.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Blight Ring",
+        "imgPath": "/maggot.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 19.60
+            },
+            {
+                "name": "Army Def",
+                "value": 21.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Wall Def",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Burning Scroll",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Army Atk",
+                "value": 12.60
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 12.60
+            },
+            {
+                "name": "Timber Production Rate",
+                "value": 49.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Ivory Choker",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 11.20
+            },
+            {
+                "name": "Trap Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Trap Def",
+                "value": 21.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 11.20
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Dragon's Iris",
+        "imgPath": "/blackwing.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 14.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Secret Totem",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 9.80
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Def",
+                "value": 9.80
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Ambrosial Cup",
+        "imgPath": "/bon.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Rowdy Resolve",
+        "imgPath": "/gawrilla.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 14.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 10.50
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Polar Ring",
+        "imgPath": "/arcticFlipper.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 35.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 21.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 21.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Champion Faith",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Champion Blessing",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Mythic",
+        "name": "Champion Valor",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 21.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Wyrm Seal",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 8.00
+            },
+            {
+                "name": "Stone Production Rate",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Terror Vial",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Army Def",
+                "value": 8.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 5.00
+            },
+            {
+                "name": "Ore Production Rate",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Fear Drum",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 5.50
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Blight Ring",
+        "imgPath": "/maggot.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 14.00
+            },
+            {
+                "name": "Army Def",
+                "value": 15.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Wall Def",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Burning Scroll",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Army Atk",
+                "value": 9.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 9.00
+            },
+            {
+                "name": "Timber Production Rate",
+                "value": 35.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Ivory Choker",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 8.00
+            },
+            {
+                "name": "Trap Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Trap Def",
+                "value": 15.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 8.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Dragon's Iris",
+        "imgPath": "/blackwing.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Secret Totem",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 7.00
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Def",
+                "value": 7.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Ambrosial Cup",
+        "imgPath": "/bon.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Rowdy Resolve",
+        "imgPath": "/gawrilla.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 10.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 7.50
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Polar Ring",
+        "imgPath": "/arcticFlipper.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 25.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 15.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Champion Faith",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Champion Blessing",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Legendary",
+        "name": "Champion Valor",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 15.00
+            },
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 25.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Wyrm Seal",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 10.05
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 5.00
+            },
+            {
+                "name": "Stone Production Rate",
+                "value": 22.50
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Terror Vial",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 10.05
+            },
+            {
+                "name": "Army Def",
+                "value": 5.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 2.50
+            },
+            {
+                "name": "Ore Production Rate",
+                "value": 22.50
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Fear Drum",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 10.05
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 3.65
+            },
+            {
+                "name": "Gold Production Rate",
+                "value": 22.50
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Blight Ring",
+        "imgPath": "/maggot.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 8.85
+            },
+            {
+                "name": "Army Def",
+                "value": 9.50
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 9.50
+            },
+            {
+                "name": "Wall Def",
+                "value": 16.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Burning Scroll",
+        "imgPath": "/helldrider.webp",
+        "stats": [
+            {
+                "name": "Army Atk",
+                "value": 5.85
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 5.85
+            },
+            {
+                "name": "Timber Production Rate",
+                "value": 22.50
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Ivory Choker",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Trap Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Trap Def",
+                "value": 9.50
+            },
+            {
+                "name": "Travel Speed",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Dragon's Iris",
+        "imgPath": "/blackwing.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 6.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Secret Totem",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 4.45
+            },
+            {
+                "name": "Siege Engine Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Def",
+                "value": 4.45
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Ambrosial Cup",
+        "imgPath": "/bon.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 16.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 9.50
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 9.50
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Rowdy Resolve",
+        "imgPath": "/gawrilla.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 15.75
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 6.30
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 4.75
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Polar Ring",
+        "imgPath": "/arcticFlipper.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 15.75
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 15.75
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 9.45
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 9.45
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Champion Faith",
+        "imgPath": "/champ1.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 16.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Champion Blessing",
+        "imgPath": "/champ2.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 16.00
+            }
+        ]
+    },
+    {
+        "type": "Accessory",
+        "rarity": "Epic",
+        "name": "Champion Valor",
+        "imgPath": "/champ3.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 9.50
+            },
+            {
+                "name": "Army Atk",
+                "value": 6.00
+            },
+            {
+                "name": "Army Max Hp",
+                "value": 16.00
             }
         ]
     }
-}
+]

@@ -1,17 +1,8 @@
 import { Component } from '@angular/core';
 import { EquipmentSlot } from '../../equipment-slot/equipment-slot.model';
-import { HOME_ROUTE } from '../../../utilities/constants';
-
-//Equipment, Jewels, and Sigils
-import EquipmentJson from '../../../assets/json/equipment.json';
-import JewelsJson from '../../../assets/json/jewels.json';
-import SigilsJson from '../../../assets/json/sigils.json';
-
-//All JSON files must follow this format to be used in the modal windows
-interface iEquipment {
-  tooltip: string;
-  imgPath: string;
-}
+import { HOME_ROUTE, BASE_FILE_PATH } from '../../../utilities/constants';
+import { EquipmentService } from 'src/app/equipment.service';
+import { IEquipment } from 'src/interfaces/equipment';
 
 declare var $: any;
 
@@ -22,37 +13,36 @@ declare var $: any;
 })
 export class EquipmentSimulatorComponent {
   HOME_PATH:string = HOME_ROUTE;
+  BASE_IMAGE_PATH:string = BASE_FILE_PATH;
+  equipment: IEquipment[] = [];
 
-  equipmentSlotList: EquipmentSlot[] = [
-    new EquipmentSlot("Mainhand", "./../../assets/Images/Equipment/mainHand.png", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
-    new EquipmentSlot("Offhand", "./../../assets/Images/Equipment/offHand.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
-    new EquipmentSlot("Helmet", "./../../assets/Images/Equipment/helmet.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
-    new EquipmentSlot("Accessory", "./../../assets/Images/Equipment/equipmentSlot.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
-    new EquipmentSlot("Chest", "./../../assets/Images/Equipment/chest.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
-    new EquipmentSlot("Accessory", "./../../assets/Images/Equipment/equipmentSlot.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
-    new EquipmentSlot("Boots", "./../../assets/Images/Equipment/boots.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG"),
-    new EquipmentSlot("Accessory", "./../../assets/Images/Equipment/equipmentSlot.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG", "./../../assets/Images/Equipment/jewel.PNG")
-  ];
-
-  equipmentArray: iEquipment[] = EquipmentJson.Mainhand.Mythic;
-  jewelsArray: iEquipment[] = JewelsJson.Legendary;
-  sigilsArray: iEquipment[] = SigilsJson.Legendary;
+  equipmentArray: IEquipment[] = [];
+  jewelsArray: IEquipment[] = [];
+  sigilsArray: IEquipment[] = [];
 
   slotName: string = "";
-  equipment: any = {};
-  jewels: any = {};
-  sigils: any = {};
 
-  constructor() { 
-    //Put JSON Imports into a JS Object to dynamically change arrays
-    this.equipment = JSON.parse(JSON.stringify(EquipmentJson));
-    this.jewels = JSON.parse(JSON.stringify(JewelsJson));
-    this.sigils = JSON.parse(JSON.stringify(SigilsJson));
-  }
+  equipmentSlotList: EquipmentSlot[] = [
+    new EquipmentSlot("Mainhand", BASE_FILE_PATH + "mainHand.png", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
+    new EquipmentSlot("Offhand", BASE_FILE_PATH + "offHand.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
+    new EquipmentSlot("Helmet", BASE_FILE_PATH + "helmet.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
+    new EquipmentSlot("Accessory", BASE_FILE_PATH + "equipmentSlot.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
+    new EquipmentSlot("Chest", BASE_FILE_PATH + "chest.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
+    new EquipmentSlot("Accessory", BASE_FILE_PATH + "equipmentSlot.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
+    new EquipmentSlot("Boots", BASE_FILE_PATH + "boots.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
+    new EquipmentSlot("Accessory", BASE_FILE_PATH + "equipmentSlot.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG")
+  ];
+
+  constructor(private equipmentService: EquipmentService) { }
 
   getEquipmentInfo(type: string)
   {
     //Fetch from backend
+    this.equipmentService.getEquipment(type)
+      .subscribe(response => this.equipment = response);
+
+      //DEBUG
+      console.log("INCOMING EQUIPMENT: ", this.equipment);
     this.populateModal(type);
   }
 
@@ -60,9 +50,12 @@ export class EquipmentSimulatorComponent {
   {
     //Change modal content
     this.slotName = type;
-    this.equipmentArray = this.equipment[type].Mythic;
-    this.jewelsArray = JewelsJson.Legendary;
-    this.sigilsArray = SigilsJson.Legendary;
+
+    let selectedEquipment: IEquipment[] = this.equipment.filter(equipment => equipment.type === type && equipment.rarity === "Mythic");
+    this.equipmentArray = selectedEquipment;
+    
+    //DEBUG
+    console.log("Selected Equipment", this.equipmentArray);
 
     //Initialize Tooltips
     $('[data-bs-toggle="tooltip"]').tooltip();
@@ -70,42 +63,40 @@ export class EquipmentSimulatorComponent {
 
   changeRarity(rarity: string) 
   {
-    this.equipmentArray = this.equipment[this.slotName][rarity];
+    let selectedEquipment: IEquipment[] = this.equipment.filter(equipment => equipment.type === this.slotName && equipment.rarity === rarity);
+    this.equipmentArray = selectedEquipment;
 
-    if (rarity == "Mythic")
-    {
-      this.jewelsArray = JewelsJson.Legendary;
-      this.sigilsArray = SigilsJson.Legendary;
-    }
-    else
-    {
-      this.jewelsArray = this.jewels[rarity];
-      this.sigilsArray = this.sigils[rarity];
-    }
+    //DEBUG
+    console.log("Selected Equipment", this.equipmentArray);
+
+    // if (rarity == "Mythic")
+    // {
+    //   this.jewelsArray = JewelsJson.Legendary;
+    //   this.sigilsArray = SigilsJson.Legendary;
+    // }
+    // else
+    // {
+    //   this.jewelsArray = this.jewels[rarity];
+    //   this.sigilsArray = this.sigils[rarity];
+    // }
     
     //Initialize Tooltips
     $('[data-bs-toggle="tooltip"]').tooltip();
   }
 
-  equipmentSelected(equipment: string)
+  equipmentSelected(selectedEquipment: string)
   {
-    console.log(equipment);
+    //DEBUG
+    console.log(selectedEquipment);
 
     //Send imgPath to child component to show change
     //Add stats to stats window
   }
 
-  jewelSelected(jewel: string)
+  jewelSelected(selectedJewel: string)
   {
-    console.log(jewel);
-
-    //Send imgPath to child component to show change
-    //Add stats to stats window
-  }
-
-  sigilSelected(sigil: string)
-  {
-    console.log(sigil);
+    //DEBUG
+    console.log(selectedJewel);
 
     //Send imgPath to child component to show change
     //Add stats to stats window

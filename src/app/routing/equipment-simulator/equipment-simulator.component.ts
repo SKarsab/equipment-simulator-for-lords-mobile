@@ -27,8 +27,6 @@ export class EquipmentSimulatorComponent {
 
   slotName: string = "";
   rarity: string = "";
-  //equipmentColour: string = "#BC5A00";
-  //jewelColour: string = "#D1A500";
 
   equipmentSlotList: EquipmentSlot[] = [
     new EquipmentSlot("Mainhand", BASE_FILE_PATH + "mainHand.png", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),

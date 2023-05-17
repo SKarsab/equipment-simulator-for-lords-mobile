@@ -1,8 +1,7 @@
-/* DEBUG */
 .center-img {
     position: absolute;
     top: 50%;
-    left: 39%;
+    left: 47%;
     transform: translate(-43%, -55%);
     background-repeat: no-repeat;
     background-position: center;
@@ -14,6 +13,20 @@
 @media (max-width: 1000px) {
     .hidden-hero-mobile {
       display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+    .fixed-on-md {
+        position: fixed;
+        top: 10%;
+        left: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .collapse-on-sm {
+      position: flex !important; 
     }
 }
 
@@ -68,8 +81,8 @@ button:hover {
     opacity: 0.5;
 }
 
-/* //ALL DEBUG */
+/* DEBUG */
 .debug-size {
-    width: 300px;
+    width: 350px;
     height: 700px;
 }

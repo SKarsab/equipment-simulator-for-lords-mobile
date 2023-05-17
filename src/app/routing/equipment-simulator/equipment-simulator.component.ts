@@ -5,7 +5,7 @@
 
 import { Component } from '@angular/core';
 import { EquipmentSlot } from '../../equipment-slot/equipment-slot.model';
-import { HOME_ROUTE, BASE_FILE_PATH, MYTHIC, LEGENDARY, EPIC, ORANGE, GOLD, PURPLE } from '../../../utilities/constants';
+import { HOME_ROUTE, BASE_FILE_PATH, MYTHIC, LEGENDARY, JEWEL } from '../../../utilities/constants';
 import { EquipmentService } from 'src/app/equipment.service';
 import { IEquipment } from 'src/interfaces/equipment';
 
@@ -26,8 +26,9 @@ export class EquipmentSimulatorComponent {
   jewelsArray: IEquipment[] = [];
 
   slotName: string = "";
-  equipmentColour: string = "#BC5A00";
-  jewelColour: string = "#BC5A00";
+  rarity: string = "";
+  //equipmentColour: string = "#BC5A00";
+  //jewelColour: string = "#D1A500";
 
   equipmentSlotList: EquipmentSlot[] = [
     new EquipmentSlot("Mainhand", BASE_FILE_PATH + "mainHand.png", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
@@ -42,6 +43,11 @@ export class EquipmentSimulatorComponent {
 
   constructor(private equipmentService: EquipmentService) { }
 
+  //DEBUG
+  ngOnInit() {
+    this.getEquipmentInfo("Mainhand");
+  }
+
   // DESCRIPTION :
   //  Fetch all available equipment data from backend for selected slot/type
   // PARAMETERS  :
@@ -50,6 +56,9 @@ export class EquipmentSimulatorComponent {
   {
     this.equipmentService.getEquipment(type)
       .subscribe(response => this.equipment = response);
+
+    this.equipmentService.getEquipment(JEWEL)
+      .subscribe(response => this.jewels = response);
 
     this.populateModal(type);
   }
@@ -62,15 +71,14 @@ export class EquipmentSimulatorComponent {
   populateModal(type: string)
   {
     this.slotName = type;
+    this.rarity = MYTHIC;
 
     let selectedEquipment: IEquipment[] = this.equipment.filter(equipment => equipment.type === type && equipment.rarity === MYTHIC);
     this.equipmentArray = selectedEquipment;
     
-    //DEBUG
-    //Might need to store jewels in the same array or call backend twice?
-    let selectedJewels: IEquipment[] = this.jewels.filter(jewel => jewel.type === type && jewel.rarity === LEGENDARY);
+    let selectedJewels: IEquipment[] = this.jewels.filter(jewel => jewel.rarity === LEGENDARY);
     this.jewelsArray = selectedJewels;
-    
+
     //Initialize Tooltips
     $('[data-bs-toggle="tooltip"]').tooltip();
   }
@@ -82,24 +90,20 @@ export class EquipmentSimulatorComponent {
   //  rarity - the selected equipment rarity (E.g. "Mythic", "Legendary")
   changeRarity(rarity: string) 
   {
+    this.rarity = rarity;
+
+    //DEBUG
+    //Why is this needed?
     let selectedEquipment: IEquipment[] = this.equipment.filter(equipment => equipment.type === this.slotName && equipment.rarity === rarity);
     this.equipmentArray = selectedEquipment;
 
-    if (rarity === MYTHIC)
-    {
-      this.equipmentColour = ORANGE;
-      this.jewelColour = GOLD;
-    }
-    else if (rarity === LEGENDARY)
-    {
-      this.equipmentColour = GOLD;
-      this.jewelColour = GOLD;
-    }
-    else if (rarity === EPIC)
-    {
-      this.equipmentColour = PURPLE;
-      this.jewelColour = PURPLE;
-    }
+    //There are no mythic jewels, so display legendary on both mythic and legendary
+    let jewelRarity:string = rarity === MYTHIC || rarity === LEGENDARY ? LEGENDARY : rarity;
+
+    //DEBUG
+    //Why is this needed?
+    let selectedJewels: IEquipment[] = this.jewels.filter(jewel => jewel.rarity === jewelRarity);
+    this.jewelsArray = selectedJewels;
 
     //Initialize Tooltips
     $('[data-bs-toggle="tooltip"]').tooltip();

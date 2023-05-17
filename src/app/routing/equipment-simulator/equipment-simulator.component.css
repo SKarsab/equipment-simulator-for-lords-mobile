@@ -67,14 +67,35 @@
     height: 30px;
 }
 
+.purple-conic-gr {
+    background: repeating-conic-gradient(  #9768BC 30%,  #7245A4 35%,  #9768BC 45%);
+}
+
 .gold {
-    background-color: #EFDA05;
+    background-color: #D1A500;
     height: 30px;
+}
+
+.gold-conic-gr {
+    background: repeating-conic-gradient(  #D1A500 30%,  #BC8800 35%,  #D1A500 45%);
 }
 
 .orange {
     background-color: #BC5A00;
     height: 30px;
+}
+
+.orange-conic-gr {
+    background: repeating-conic-gradient(  #DC6700 30%,  #C04900 35%,  #DC6700 45%);
+}
+
+.button-border {
+    border: 1px solid black;
+}
+
+.rarityButton {
+    width: 100px;
+    color: white;
 }
 
 button:hover {

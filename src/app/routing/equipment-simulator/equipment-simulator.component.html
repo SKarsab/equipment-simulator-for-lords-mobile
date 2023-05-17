@@ -130,31 +130,29 @@
                 <h5 class="modal-title text-white">{{slotName}}</h5>
 
                 <div class="ml-20">
-                    <div class="d-flex m-0">
-                        <h6 class="text-white me-2">Rarity:</h6>
-
-                        <button type="button" class="btn purple" (click)="changeRarity('Epic')"></button>
-                        <button type="button" class="btn gold" (click)="changeRarity('Legendary')"></button>
-                        <button type="button" class="btn orange" (click)="changeRarity('Mythic')"></button>
+                    <div class="d-flex">
+                        <button type="button" class="btn purple rarityButton box-shadow-two d-flex align-items-center justify-content-center m-1" (click)="changeRarity('Epic')">Epic</button>
+                        <button type="button" class="btn gold rarityButton box-shadow-two d-flex align-items-center justify-content-center m-1" (click)="changeRarity('Legendary')">Legendary</button>
+                        <button type="button" class="btn orange rarityButton box-shadow-two d-flex align-items-center justify-content-center m-1" (click)="changeRarity('Mythic')">Mythic</button>
                     </div>
                 </div>
 
-                <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-white">{{slotName}}:</p>
-                        <div class="d-flex flex-settings">
-                            <button type="button" class="btn p-1" *ngFor="let equipment of equipmentArray" (click)="equipmentSelected(equipment.name)" [ngStyle]="{'background-color': equipmentColour}">
-                                <img class="modal-img-size" src="{{ BASE_IMAGE_PATH + equipment.type + equipment.imgPath }}" alt="equipmentChoice"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ equipment.name }}">
+                        <p class="text-white m-0">{{slotName}}:</p>
+                        <div class="d-flex flex-settings p-0">
+                            <button type="button" class="btn box-shadow button-border m-1" *ngFor="let equipment of equipmentArray" (click)="equipmentSelected(equipment.name)" [ngClass]="{'orange-conic-gr': rarity == 'Mythic', 'gold-conic-gr': rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
+                                <img class="modal-img-size fg-z" src="{{ BASE_IMAGE_PATH + equipment.type + equipment.imgPath }}" alt="armour"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ equipment.name }}">
                             </button>
                         </div>
 
-                        <p class="text-white">Jewels:</p>
-                        <div class="d-flex flex-settings">
-                            <button type="button" class="btn p-1" *ngFor="let jewel of jewelsArray" (click)="jewelSelected(jewel.name)" [ngStyle]="{'background-color': jewelColour}">
-                                <img class="modal-img-size" src="{{ BASE_IMAGE_PATH + jewel.type + jewel.imgPath }}" alt="equipmentChoice"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ jewel.name }}">
+                        <p class="text-white m-0">Jewels:</p>
+                        <div class="d-flex flex-settings p-0">
+                            <button type="button" class="btn box-shadow button-border m-1" *ngFor="let jewel of jewelsArray" (click)="jewelSelected(jewel.name)" [ngClass]="{'gold-conic-gr': rarity == 'Mythic' || rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
+                                <img class="modal-img-size" src="{{ BASE_IMAGE_PATH + jewel.type + jewel.imgPath }}" alt="jewel"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ jewel.name }}">
                             </button>
                         </div>
                     </div>

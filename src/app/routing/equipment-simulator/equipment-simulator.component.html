@@ -19,31 +19,13 @@
                 <div class="row p-4">
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
-                            slotName="{{ equipmentSlotList[0].slotName }}" 
-                            type="{{ equipmentSlotList[0].type }}" 
-                            rarity="{{ equipmentSlotList[0].rarity }}" 
-                            [currentEquipmentImage]="equipmentSlotList[0].currentEquipmentImage"
-                            currentJewelImage1="{{ equipmentSlotList[0].currentJewelImage1 }}" 
-                            jewelRarity1="{{ equipmentSlotList[0].jewelRarity1 }}"
-                            currentJewelImage2="{{ equipmentSlotList[0].currentJewelImage2 }}"
-                            jewelRarity2="{{ equipmentSlotList[0].jewelRarity2 }}"
-                            currentJewelImage3="{{ equipmentSlotList[0].currentJewelImage3 }}"
-                            jewelRarity3="{{ equipmentSlotList[0].jewelRarity3 }}"  
+                            [equipmentSlot]="equipmentSlotList[0]"
                             (equipmentSelectEvent)="getEquipmentInfo($event)">
                         </app-equipment-slot>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
-                            slotName="{{ equipmentSlotList[1].slotName }}" 
-                            type="{{ equipmentSlotList[1].type }}" 
-                            rarity="{{ equipmentSlotList[1].rarity }}" 
-                            [currentEquipmentImage]="equipmentSlotList[1].currentEquipmentImage"
-                            currentJewelImage1="{{ equipmentSlotList[1].currentJewelImage1 }}"
-                            jewelRarity1="{{ equipmentSlotList[1].jewelRarity1 }}"
-                            currentJewelImage2="{{ equipmentSlotList[1].currentJewelImage2 }}"
-                            jewelRarity2="{{ equipmentSlotList[1].jewelRarity2 }}"
-                            currentJewelImage3="{{ equipmentSlotList[1].currentJewelImage3 }}"
-                            jewelRarity3="{{ equipmentSlotList[1].jewelRarity3 }}"
+                            [equipmentSlot]="equipmentSlotList[1]"
                             (equipmentSelectEvent)="getEquipmentInfo($event)">
                         </app-equipment-slot>
                     </div>
@@ -51,31 +33,13 @@
                 <div class="row p-4">
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
-                            slotName="{{ equipmentSlotList[2].slotName }}" 
-                            type="{{ equipmentSlotList[2].type }}" 
-                            rarity="{{ equipmentSlotList[2].rarity }}" 
-                            [currentEquipmentImage]="equipmentSlotList[2].currentEquipmentImage"
-                            currentJewelImage1="{{ equipmentSlotList[2].currentJewelImage1 }}"
-                            jewelRarity1="{{ equipmentSlotList[2].jewelRarity1 }}"
-                            currentJewelImage2="{{ equipmentSlotList[2].currentJewelImage2 }}"
-                            jewelRarity2="{{ equipmentSlotList[2].jewelRarity2 }}"
-                            currentJewelImage3="{{ equipmentSlotList[2].currentJewelImage3 }}"
-                            jewelRarity3="{{ equipmentSlotList[2].jewelRarity3 }}"
+                            [equipmentSlot]="equipmentSlotList[2]"
                             (equipmentSelectEvent)="getEquipmentInfo($event)">
                         </app-equipment-slot>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
-                            slotName="{{ equipmentSlotList[3].slotName }}" 
-                            type="{{ equipmentSlotList[3].type }}" 
-                            rarity="{{ equipmentSlotList[3].rarity }}" 
-                            [currentEquipmentImage]="equipmentSlotList[3].currentEquipmentImage"
-                            currentJewelImage1="{{ equipmentSlotList[3].currentJewelImage1 }}"
-                            jewelRarity1="{{ equipmentSlotList[3].jewelRarity1 }}"
-                            currentJewelImage2="{{ equipmentSlotList[3].currentJewelImage2 }}"
-                            jewelRarity2="{{ equipmentSlotList[3].jewelRarity2 }}"
-                            currentJewelImage3="{{ equipmentSlotList[3].currentJewelImage3 }}"
-                            jewelRarity3="{{ equipmentSlotList[3].jewelRarity3 }}"
+                            [equipmentSlot]="equipmentSlotList[3]"
                             (equipmentSelectEvent)="getEquipmentInfo($event)">
                         </app-equipment-slot>
                     </div>
@@ -83,31 +47,13 @@
                 <div class="row p-4">
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
-                            slotName="{{ equipmentSlotList[4].slotName }}" 
-                            type="{{ equipmentSlotList[4].type }}" 
-                            rarity="{{ equipmentSlotList[4].rarity }}" 
-                            [currentEquipmentImage]="equipmentSlotList[4].currentEquipmentImage"
-                            currentJewelImage1="{{ equipmentSlotList[4].currentJewelImage1 }}"
-                            jewelRarity1="{{ equipmentSlotList[4].jewelRarity1 }}"
-                            currentJewelImage2="{{ equipmentSlotList[4].currentJewelImage2 }}"
-                            jewelRarity2="{{ equipmentSlotList[4].jewelRarity2 }}"
-                            currentJewelImage3="{{ equipmentSlotList[4].currentJewelImage3 }}"
-                            jewelRarity3="{{ equipmentSlotList[4].jewelRarity3 }}"
+                            [equipmentSlot]="equipmentSlotList[4]"
                             (equipmentSelectEvent)="getEquipmentInfo($event)">
                         </app-equipment-slot>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
-                            slotName="{{ equipmentSlotList[5].slotName }}" 
-                            type="{{ equipmentSlotList[5].type }}" 
-                            rarity="{{ equipmentSlotList[5].rarity }}" 
-                            [currentEquipmentImage]="equipmentSlotList[5].currentEquipmentImage"
-                            currentJewelImage1="{{ equipmentSlotList[5].currentJewelImage1 }}"
-                            jewelRarity1="{{ equipmentSlotList[5].jewelRarity1 }}"
-                            currentJewelImage2="{{ equipmentSlotList[5].currentJewelImage2 }}"
-                            jewelRarity2="{{ equipmentSlotList[5].jewelRarity2 }}"
-                            currentJewelImage3="{{ equipmentSlotList[5].currentJewelImage3 }}"
-                            jewelRarity3="{{ equipmentSlotList[5].jewelRarity3 }}"
+                            [equipmentSlot]="equipmentSlotList[5]"
                             (equipmentSelectEvent)="getEquipmentInfo($event)">
                         </app-equipment-slot>
                     </div>
@@ -115,31 +61,13 @@
                 <div class="row p-4">
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
-                            slotName="{{ equipmentSlotList[6].slotName }}" 
-                            type="{{ equipmentSlotList[6].type }}" 
-                            rarity="{{ equipmentSlotList[6].rarity }}" 
-                            [currentEquipmentImage]="equipmentSlotList[6].currentEquipmentImage"
-                            currentJewelImage1="{{ equipmentSlotList[6].currentJewelImage1 }}"
-                            jewelRarity1="{{ equipmentSlotList[6].jewelRarity1 }}"
-                            currentJewelImage2="{{ equipmentSlotList[6].currentJewelImage2 }}"
-                            jewelRarity2="{{ equipmentSlotList[6].jewelRarity2 }}"
-                            currentJewelImage3="{{ equipmentSlotList[6].currentJewelImage3 }}"
-                            jewelRarity3="{{ equipmentSlotList[6].jewelRarity3 }}"
+                            [equipmentSlot]="equipmentSlotList[6]"
                             (equipmentSelectEvent)="getEquipmentInfo($event)">
                         </app-equipment-slot>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
-                            slotName="{{ equipmentSlotList[7].slotName }}" 
-                            type="{{ equipmentSlotList[7].type }}" 
-                            rarity="{{ equipmentSlotList[7].rarity }}" 
-                            [currentEquipmentImage]="equipmentSlotList[7].currentEquipmentImage"
-                            currentJewelImage1="{{ equipmentSlotList[7].currentJewelImage1 }}"
-                            jewelRarity1="{{ equipmentSlotList[7].jewelRarity1 }}"
-                            currentJewelImage2="{{ equipmentSlotList[7].currentJewelImage2 }}"
-                            jewelRarity2="{{ equipmentSlotList[7].jewelRarity2 }}"
-                            currentJewelImage3="{{ equipmentSlotList[7].currentJewelImage3 }}"
-                            jewelRarity3="{{ equipmentSlotList[7].jewelRarity3 }}"
+                            [equipmentSlot]="equipmentSlotList[7]"
                             (equipmentSelectEvent)="getEquipmentInfo($event)">
                         </app-equipment-slot>
                     </div>

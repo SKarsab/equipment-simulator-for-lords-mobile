@@ -5,7 +5,8 @@
 
 import { Component } from '@angular/core';
 import { EquipmentSlot } from '../../equipment-slot/equipment-slot.model';
-import { HOME_ROUTE, BASE_FILE_PATH, MYTHIC, LEGENDARY, JEWEL } from '../../../utilities/constants';
+import { defaultEquipmentSlots } from '../../../utilities/equipmentSlots';
+import { HOME_ROUTE, BASE_FILE_PATH, MYTHIC, LEGENDARY, JEWEL, MAINHAND } from '../../../utilities/constants';
 import { EquipmentService } from 'src/app/equipment.service';
 import { IEquipment } from 'src/interfaces/equipment';
 
@@ -17,9 +18,10 @@ declare var $: any;
   styleUrls: ['./equipment-simulator.component.css']
 })
 export class EquipmentSimulatorComponent {
-  HOME_PATH:string = HOME_ROUTE;
-  BASE_IMAGE_PATH:string = BASE_FILE_PATH;
-  
+  HOME_PATH: string = HOME_ROUTE;
+  BASE_IMAGE_PATH: string = BASE_FILE_PATH;
+  equipmentSlotList: EquipmentSlot[] = defaultEquipmentSlots;
+
   equipment: IEquipment[] = [];
   equipmentArray: IEquipment[] = [];
   jewels: IEquipment[] = [];
@@ -31,22 +33,11 @@ export class EquipmentSimulatorComponent {
   jewelRarity:string = "";
   stats: string = "Test Stats: 20%";
 
-  equipmentSlotList: EquipmentSlot[] = [
-    new EquipmentSlot("Mainhand", "Mainhand", MYTHIC, BASE_FILE_PATH + "Mainhand/Mainhand.png", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
-    new EquipmentSlot("Offhand", "Offhand", MYTHIC, BASE_FILE_PATH + "Offhand/Offhand.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
-    new EquipmentSlot("Helmet", "Helmet", MYTHIC, BASE_FILE_PATH + "Helmet/Helmet.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
-    new EquipmentSlot("Accessory1", "Accessory", MYTHIC, BASE_FILE_PATH + "Accessory/Accessory.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
-    new EquipmentSlot("Chest", "Chest", MYTHIC, BASE_FILE_PATH + "Chest/Chest.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
-    new EquipmentSlot("Accessory2", "Accessory", MYTHIC, BASE_FILE_PATH + "Accessory/Accessory.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
-    new EquipmentSlot("Boots", "Boots", MYTHIC, BASE_FILE_PATH + "Boots/Boots.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
-    new EquipmentSlot("Accessory3", "Accessory", MYTHIC, BASE_FILE_PATH + "Accessory/Accessory.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY)
-  ];
-
   constructor(private equipmentService: EquipmentService) { }
 
   //DEBUG
   ngOnInit() {
-    this.getEquipmentInfo({type: "Mainhand", slotName: "Mainhand"});
+    this.getEquipmentInfo({type: MAINHAND, slotName: MAINHAND});
   }
 
   // DESCRIPTION :
@@ -122,21 +113,11 @@ export class EquipmentSimulatorComponent {
       {
         if (this.equipmentSlotList[i].slotName === this.slotName)
         {
-          this.equipmentSlotList[i].currentEquipmentImage = BASE_FILE_PATH + selectedEquipment.type + selectedEquipment.imgPath;
-          this.equipmentSlotList[i].rarity = selectedEquipment.rarity;
+          this.equipmentSlotList[i].currentEquipment = selectedEquipment;
           break;
         }
       }
     }
-
-    //Change everything in model to objects
-    //currentEquipment:IEquipment
-    //currentJewel1:IEquipment
-    //currentJewel2:IEquipment
-    //currentJewel3:IEquipment
-    //
-    //This way you can remove current stats before changing equipment and track jewel rarities easier
-    //Switching it over is going to suck
   }
 
   // DESCRIPTION :
@@ -153,25 +134,22 @@ export class EquipmentSimulatorComponent {
       if (this.equipmentSlotList[i].slotName === this.slotName)
       {
         //Check if any sockets are empty
-        if (this.equipmentSlotList[i].currentJewelImage1 == "")
+        if (this.equipmentSlotList[i].currentJewel1.imgPath == "")
         {
-          this.equipmentSlotList[i].currentJewelImage1 = BASE_FILE_PATH + selectedJewel.type + selectedJewel.imgPath;
-          this.equipmentSlotList[i].jewelRarity1 = this.jewelRarity;
+          this.equipmentSlotList[i].currentJewel1 = selectedJewel;
         }
-        else if (this.equipmentSlotList[i].currentJewelImage2 == "")
+        else if (this.equipmentSlotList[i].currentJewel2.imgPath == "")
         {
-          this.equipmentSlotList[i].currentJewelImage2 = BASE_FILE_PATH + selectedJewel.type + selectedJewel.imgPath;
-          this.equipmentSlotList[i].jewelRarity2 = this.jewelRarity;
+          this.equipmentSlotList[i].currentJewel2 = selectedJewel;
         }
-        else if (this.equipmentSlotList[i].currentJewelImage3 == "")
+        else if (this.equipmentSlotList[i].currentJewel3.imgPath == "")
         {
-          this.equipmentSlotList[i].currentJewelImage3 = BASE_FILE_PATH + selectedJewel.type + selectedJewel.imgPath;
-          this.equipmentSlotList[i].jewelRarity3 = this.jewelRarity;
+          this.equipmentSlotList[i].currentJewel3 = selectedJewel;
         }
 
         //Start overriding?
         //Check for duplicates
-        //Honestly just make it a click on that box. THis is clunky as fuck
+        //Honestly just make it a click on that box. This is clunky
         break;
       }
     }

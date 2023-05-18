@@ -13,6 +13,14 @@ export const JEWEL: string = "Jewel";
 export const MYTHIC: string = "Mythic";
 export const LEGENDARY: string = "Legendary";
 export const EPIC: string = "Epic";
+
+export const MAINHAND: string = "Mainhand";
+export const OFFHAND: string = "Offhand";
+export const HELMET: string = "Helmet";
+export const CHEST: string = "Chest";
+export const BOOTS: string = "Boots";
+export const ACCESSORY: string = "Accessory";
+
 export const ORANGE: string = "#BC5A00";
 export const GOLD: string = "#D1A500";
 export const PURPLE: string = "#7245A4";

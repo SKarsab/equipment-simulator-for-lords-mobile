@@ -1,18 +1,18 @@
-<div class="d-flex flex-column equipmentButton box-shadow">
+<div class="d-flex flex-column box-shadow">
     <div class="fg-z">
-        <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#equipmentModal" (click)="emitEquipmentType()">
-            <img src="{{ currentEquipmentImage }}" alt="EquipmentSlot" class="equipmentSize button-border b-rounded" [ngClass]="{'orange-conic-gr': rarity == 'Mythic', 'gold-conic-gr': rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
+        <button class="btn equipmentButton p-0" data-bs-toggle="modal" data-bs-target="#equipmentModal" (click)="emitEquipmentType()">
+            <img src="{{ BASE_IMAGE_PATH + equipmentSlot.currentEquipment.type + equipmentSlot.currentEquipment.imgPath }}" alt="EquipmentSlot" class="equipmentSize button-border b-rounded" [ngClass]="{'orange-conic-gr': equipmentSlot.currentEquipment.rarity == 'Mythic', 'gold-conic-gr': equipmentSlot.currentEquipment.rarity == 'Legendary', 'purple-conic-gr': equipmentSlot.currentEquipment.rarity == 'Epic'}">
         </button>
     </div>
     <div class="d-flex fg-z">
-        <div class="jewelSize bg-dark box-shadow b-rounded" [ngClass]="{'gold-conic-gr': (jewelRarity1 == 'Mythic' && currentJewelImage1 != '') || (jewelRarity1 == 'Legendary' && currentJewelImage1 != '') , 'purple-conic-gr': (jewelRarity1 == 'Epic' && currentJewelImage1 != '')}">
-            <img src="{{ currentJewelImage1 }}" alt="jewel1" class="jewelSize">
+        <div class="jewelSize bg-dark box-shadow b-rounded equipmentButton" (click)="emitRemoveJewel()" [ngClass]="{'gold-conic-gr': (equipmentSlot.currentJewel1.rarity == 'Mythic' && equipmentSlot.currentJewel1.imgPath != '') || (equipmentSlot.currentJewel1.rarity == 'Legendary' && equipmentSlot.currentJewel1.imgPath != '') , 'purple-conic-gr': (equipmentSlot.currentJewel1.rarity == 'Epic' && equipmentSlot.currentJewel1.imgPath != '')}">
+            <img src="{{ BASE_IMAGE_PATH + equipmentSlot.currentJewel1.type + equipmentSlot.currentJewel1.imgPath }}" alt="jewel1" class="jewelSize">
         </div>
-        <div class="jewelSize bg-dark box-shadow b-rounded" [ngClass]="{'gold-conic-gr': (jewelRarity2 == 'Mythic' && currentJewelImage2 != '') || (jewelRarity2 == 'Legendary' && currentJewelImage2 != '') , 'purple-conic-gr': (jewelRarity2 == 'Epic' && currentJewelImage2 != '')}">
-            <img src="{{ currentJewelImage2 }}" alt="jewel2" class="jewelSize">
+        <div class="jewelSize bg-dark box-shadow b-rounded equipmentButton" [ngClass]="{'gold-conic-gr': (equipmentSlot.currentJewel2.rarity == 'Mythic' && equipmentSlot.currentJewel2.imgPath != '') || (equipmentSlot.currentJewel2.rarity == 'Legendary' && equipmentSlot.currentJewel2.imgPath != '') , 'purple-conic-gr': (equipmentSlot.currentJewel2.rarity == 'Epic' && equipmentSlot.currentJewel2.imgPath != '')}">
+            <img src="{{ BASE_IMAGE_PATH + equipmentSlot.currentJewel2.type + equipmentSlot.currentJewel2.imgPath }}" alt="jewel2" class="jewelSize">
         </div>
-        <div class="jewelSize bg-dark box-shadow b-rounded" [ngClass]="{'gold-conic-gr': (jewelRarity3 == 'Mythic' && currentJewelImage3 != '') || (jewelRarity3 == 'Legendary' && currentJewelImage3 != '') , 'purple-conic-gr': (jewelRarity3 == 'Epic' && currentJewelImage3 != '')}">
-            <img src="{{ currentJewelImage3 }}" alt="jewel3" class="jewelSize">
+        <div class="jewelSize bg-dark box-shadow b-rounded equipmentButton" [ngClass]="{'gold-conic-gr': (equipmentSlot.currentJewel3.rarity == 'Mythic' && equipmentSlot.currentJewel3.imgPath != '') || (equipmentSlot.currentJewel3.rarity == 'Legendary' && equipmentSlot.currentJewel3.imgPath != '') , 'purple-conic-gr': (equipmentSlot.currentJewel3.rarity == 'Epic' && equipmentSlot.currentJewel3.imgPath != '')}">
+            <img src="{{ BASE_IMAGE_PATH + equipmentSlot.currentJewel3.type + equipmentSlot.currentJewel3.imgPath }}" alt="jewel3" class="jewelSize">
         </div>
     </div>
 </div>

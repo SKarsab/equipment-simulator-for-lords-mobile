@@ -3,6 +3,8 @@
 //           to the equipment-simulator component which fetches data from the backend and populates the modal
 
 import { Component, EventEmitter, Input, Output, SimpleChanges  } from '@angular/core';
+import { EquipmentSlot } from './equipment-slot.model';
+import { BASE_FILE_PATH } from 'src/utilities/constants';
 
 @Component({
   selector: 'app-equipment-slot',
@@ -10,22 +12,20 @@ import { Component, EventEmitter, Input, Output, SimpleChanges  } from '@angular
   styleUrls: ['./equipment-slot.component.css']
 })
 export class EquipmentSlotComponent {
+  BASE_IMAGE_PATH: string = BASE_FILE_PATH;
 
-  @Input() slotName!: string;
-  @Input() type!: string;
-  @Input() rarity!: string;
-  @Input() currentEquipmentImage!: any;
-  @Input() currentJewelImage1!: string;
-  @Input() jewelRarity1!: string;
-  @Input() currentJewelImage2!: string;
-  @Input() jewelRarity2!: string;
-  @Input() currentJewelImage3!: string;
-  @Input() jewelRarity3!: string;
-
+  @Input() equipmentSlot!: EquipmentSlot;
   @Output() equipmentSelectEvent = new EventEmitter<any>();
+  @Output() removeJewelEvent = new EventEmitter<any>();
 
   emitEquipmentType() {
-    this.equipmentSelectEvent.emit({type: this.type, slotName: this.slotName});
+    this.equipmentSelectEvent.emit({type: this.equipmentSlot.type, slotName: this.equipmentSlot.slotName});
+  }
+
+  emitRemoveJewel() {
+    //DEBUG
+    console.log("REMOVING JEWEL");
+    //this.removeJewelEvent.emit();
   }
 
   //DEBUG

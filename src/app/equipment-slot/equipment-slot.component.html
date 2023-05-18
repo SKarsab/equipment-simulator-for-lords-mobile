@@ -1,18 +1,18 @@
 <div class="d-flex flex-column equipmentButton box-shadow">
     <div class="fg-z">
         <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#equipmentModal" (click)="emitEquipmentType()">
-            <img src="{{ currentEquipmentImage }}" alt="EquipmentSlot" class="equipmentSize">
+            <img src="{{ currentEquipmentImage }}" alt="EquipmentSlot" class="equipmentSize button-border b-rounded" [ngClass]="{'orange-conic-gr': rarity == 'Mythic', 'gold-conic-gr': rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
         </button>
     </div>
     <div class="d-flex fg-z">
-        <div class="jewelSize bg-dark box-shadow">
-            <!-- <img src="{{ currentJewelImage1 }}" alt="JewelSlot1" class="jewelSize"> -->
+        <div class="jewelSize bg-dark box-shadow b-rounded" [ngClass]="{'gold-conic-gr': (jewelRarity1 == 'Mythic' && currentJewelImage1 != '') || (jewelRarity1 == 'Legendary' && currentJewelImage1 != '') , 'purple-conic-gr': (jewelRarity1 == 'Epic' && currentJewelImage1 != '')}">
+            <img src="{{ currentJewelImage1 }}" alt="jewel1" class="jewelSize">
         </div>
-        <div class="jewelSize bg-dark box-shadow">
-            <!-- <img src="{{ currentJewelImage2 }}" alt="JewelSlot2" class="jewelSize"> -->
+        <div class="jewelSize bg-dark box-shadow b-rounded" [ngClass]="{'gold-conic-gr': (jewelRarity2 == 'Mythic' && currentJewelImage2 != '') || (jewelRarity2 == 'Legendary' && currentJewelImage2 != '') , 'purple-conic-gr': (jewelRarity2 == 'Epic' && currentJewelImage2 != '')}">
+            <img src="{{ currentJewelImage2 }}" alt="jewel2" class="jewelSize">
         </div>
-        <div class="jewelSize bg-dark box-shadow">
-            <!-- <img src="{{ currentJewelImage3 }}" alt="JewelSlot3" class="jewelSize"> -->
+        <div class="jewelSize bg-dark box-shadow b-rounded" [ngClass]="{'gold-conic-gr': (jewelRarity3 == 'Mythic' && currentJewelImage3 != '') || (jewelRarity3 == 'Legendary' && currentJewelImage3 != '') , 'purple-conic-gr': (jewelRarity3 == 'Epic' && currentJewelImage3 != '')}">
+            <img src="{{ currentJewelImage3 }}" alt="jewel3" class="jewelSize">
         </div>
     </div>
 </div>

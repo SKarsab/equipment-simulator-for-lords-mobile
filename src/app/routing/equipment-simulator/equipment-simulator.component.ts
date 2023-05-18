@@ -26,39 +26,46 @@ export class EquipmentSimulatorComponent {
   jewelsArray: IEquipment[] = [];
 
   slotName: string = "";
+  type: string = "";
   rarity: string = "";
+  jewelRarity:string = "";
 
   equipmentSlotList: EquipmentSlot[] = [
-    new EquipmentSlot("Mainhand", BASE_FILE_PATH + "mainHand.png", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
-    new EquipmentSlot("Offhand", BASE_FILE_PATH + "offHand.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
-    new EquipmentSlot("Helmet", BASE_FILE_PATH + "helmet.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
-    new EquipmentSlot("Accessory", BASE_FILE_PATH + "equipmentSlot.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
-    new EquipmentSlot("Chest", BASE_FILE_PATH + "chest.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
-    new EquipmentSlot("Accessory", BASE_FILE_PATH + "equipmentSlot.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
-    new EquipmentSlot("Boots", BASE_FILE_PATH + "boots.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG"),
-    new EquipmentSlot("Accessory", BASE_FILE_PATH + "equipmentSlot.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG", BASE_FILE_PATH + "jewel.PNG")
+    new EquipmentSlot("Mainhand", "Mainhand", MYTHIC, BASE_FILE_PATH + "Mainhand/Mainhand.png", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
+    new EquipmentSlot("Offhand", "Offhand", MYTHIC, BASE_FILE_PATH + "Offhand/Offhand.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
+    new EquipmentSlot("Helmet", "Helmet", MYTHIC, BASE_FILE_PATH + "Helmet/Helmet.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
+    new EquipmentSlot("Accessory1", "Accessory", MYTHIC, BASE_FILE_PATH + "Accessory/Accessory.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
+    new EquipmentSlot("Chest", "Chest", MYTHIC, BASE_FILE_PATH + "Chest/Chest.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
+    new EquipmentSlot("Accessory2", "Accessory", MYTHIC, BASE_FILE_PATH + "Accessory/Accessory.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
+    new EquipmentSlot("Boots", "Boots", MYTHIC, BASE_FILE_PATH + "Boots/Boots.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
+    new EquipmentSlot("Accessory3", "Accessory", MYTHIC, BASE_FILE_PATH + "Accessory/Accessory.PNG", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY)
   ];
 
   constructor(private equipmentService: EquipmentService) { }
 
   //DEBUG
   ngOnInit() {
-    this.getEquipmentInfo("Mainhand");
+    this.getEquipmentInfo({type: "Mainhand", slotName: "Mainhand"});
   }
 
   // DESCRIPTION :
   //  Fetch all available equipment data from backend for selected slot/type
   // PARAMETERS  :
   //  type - the selected equipment slot/type (E.g. "Helmet", "Chest")
-  getEquipmentInfo(type: string)
+  getEquipmentInfo(equipmentSelectEvent:any)
   {
-    this.equipmentService.getEquipment(type)
+    this.slotName = equipmentSelectEvent.slotName;
+    this.type = equipmentSelectEvent.type;
+    this.rarity = MYTHIC;
+    this.jewelRarity = LEGENDARY;
+
+    this.equipmentService.getEquipment(equipmentSelectEvent.type)
       .subscribe(response => this.equipment = response);
 
     this.equipmentService.getEquipment(JEWEL)
       .subscribe(response => this.jewels = response);
 
-    this.populateModal(type);
+    this.populateModal();
   }
 
   // DESCRIPTION :
@@ -66,12 +73,9 @@ export class EquipmentSimulatorComponent {
   //  and rarity for the modal
   // PARAMETERS  :
   //  type - the selected equipment slot/type (E.g. "Helmet", "Chest")
-  populateModal(type: string)
+  populateModal()
   {
-    this.slotName = type;
-    this.rarity = MYTHIC;
-
-    let selectedEquipment: IEquipment[] = this.equipment.filter(equipment => equipment.type === type && equipment.rarity === MYTHIC);
+    let selectedEquipment: IEquipment[] = this.equipment.filter(equipment => equipment.type === this.type && equipment.rarity === MYTHIC);
     this.equipmentArray = selectedEquipment;
     
     let selectedJewels: IEquipment[] = this.jewels.filter(jewel => jewel.rarity === LEGENDARY);
@@ -88,19 +92,14 @@ export class EquipmentSimulatorComponent {
   //  rarity - the selected equipment rarity (E.g. "Mythic", "Legendary")
   changeRarity(rarity: string) 
   {
+    //There are no mythic jewels, so display legendary on both mythic and legendary
     this.rarity = rarity;
+    this.jewelRarity = rarity === MYTHIC || rarity === LEGENDARY ? LEGENDARY : rarity;
 
-    //DEBUG
-    //Why is this needed?
-    let selectedEquipment: IEquipment[] = this.equipment.filter(equipment => equipment.type === this.slotName && equipment.rarity === rarity);
+    let selectedEquipment: IEquipment[] = this.equipment.filter(equipment => equipment.type === this.type && equipment.rarity === rarity);
     this.equipmentArray = selectedEquipment;
 
-    //There are no mythic jewels, so display legendary on both mythic and legendary
-    let jewelRarity:string = rarity === MYTHIC || rarity === LEGENDARY ? LEGENDARY : rarity;
-
-    //DEBUG
-    //Why is this needed?
-    let selectedJewels: IEquipment[] = this.jewels.filter(jewel => jewel.rarity === jewelRarity);
+    let selectedJewels: IEquipment[] = this.jewels.filter(jewel => jewel.rarity === this.jewelRarity);
     this.jewelsArray = selectedJewels;
 
     //Initialize Tooltips
@@ -111,25 +110,59 @@ export class EquipmentSimulatorComponent {
   //  DEBUG
   // PARAMETERS  :
   //  selectedEquipment - the selected equipment (E.g. "Frostwing Greatsword", "Venom Blade")
-  equipmentSelected(selectedEquipment: string)
+  equipmentSelected(selectedEquipment: IEquipment)
   {
     //DEBUG
-    console.log(selectedEquipment);
+    console.log("SELECTED EQUIPMENT", selectedEquipment);
 
-    //Send imgPath to child component to show change
-    //Add stats to stats window
+    for(let i = 0; i < this.equipmentSlotList.length; i++)
+    {
+      if (this.equipmentSlotList[i].type === selectedEquipment.type)
+      {
+        if (this.equipmentSlotList[i].slotName === this.slotName)
+        {
+          this.equipmentSlotList[i].currentEquipmentImage = BASE_FILE_PATH + selectedEquipment.type + selectedEquipment.imgPath;
+          this.equipmentSlotList[i].rarity = selectedEquipment.rarity;
+          break;
+        }
+      }
+    }
   }
 
   // DESCRIPTION :
   //  DEBUG
   // PARAMETERS  :
   //  selectedJewel - the selected equipment (E.g. "Infantry Attack Jewel", "Champion Jewel")
-  jewelSelected(selectedJewel: string)
+  jewelSelected(selectedJewel: IEquipment)
   {
     //DEBUG
-    console.log(selectedJewel);
+    console.log("SELECTED JEWEL", selectedJewel);
 
-    //Send imgPath to child component to show change
-    //Add stats to stats window
+    for(let i = 0; i < this.equipmentSlotList.length; i++)
+    {
+      if (this.equipmentSlotList[i].slotName === this.slotName)
+      {
+        //Check if any sockets are empty
+        if (this.equipmentSlotList[i].currentJewelImage1 == "")
+        {
+          this.equipmentSlotList[i].currentJewelImage1 = BASE_FILE_PATH + selectedJewel.type + selectedJewel.imgPath;
+          this.equipmentSlotList[i].jewelRarity1 = this.jewelRarity;
+        }
+        else if (this.equipmentSlotList[i].currentJewelImage2 == "")
+        {
+          this.equipmentSlotList[i].currentJewelImage2 = BASE_FILE_PATH + selectedJewel.type + selectedJewel.imgPath;
+          this.equipmentSlotList[i].jewelRarity2 = this.jewelRarity;
+        }
+        else if (this.equipmentSlotList[i].currentJewelImage3 == "")
+        {
+          this.equipmentSlotList[i].currentJewelImage3 = BASE_FILE_PATH + selectedJewel.type + selectedJewel.imgPath;
+          this.equipmentSlotList[i].jewelRarity3 = this.jewelRarity;
+        }
+
+        //Start overriding?
+        //Honestly just make it a click on that box. THis is clunky as fuck
+        break;
+      }
+    }
   }
 }

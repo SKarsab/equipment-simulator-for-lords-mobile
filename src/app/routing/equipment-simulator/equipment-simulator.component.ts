@@ -29,6 +29,7 @@ export class EquipmentSimulatorComponent {
   type: string = "";
   rarity: string = "";
   jewelRarity:string = "";
+  stats: string = "Test Stats: 20%";
 
   equipmentSlotList: EquipmentSlot[] = [
     new EquipmentSlot("Mainhand", "Mainhand", MYTHIC, BASE_FILE_PATH + "Mainhand/Mainhand.png", "", LEGENDARY, "", LEGENDARY, "", LEGENDARY),
@@ -127,6 +128,15 @@ export class EquipmentSimulatorComponent {
         }
       }
     }
+
+    //Change everything in model to objects
+    //currentEquipment:IEquipment
+    //currentJewel1:IEquipment
+    //currentJewel2:IEquipment
+    //currentJewel3:IEquipment
+    //
+    //This way you can remove current stats before changing equipment and track jewel rarities easier
+    //Switching it over is going to suck
   }
 
   // DESCRIPTION :
@@ -160,6 +170,7 @@ export class EquipmentSimulatorComponent {
         }
 
         //Start overriding?
+        //Check for duplicates
         //Honestly just make it a click on that box. THis is clunky as fuck
         break;
       }

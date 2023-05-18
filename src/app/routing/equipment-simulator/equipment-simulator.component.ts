@@ -9,8 +9,7 @@ import { defaultEquipmentSlots } from '../../../utilities/equipmentSlots';
 import { HOME_ROUTE, BASE_FILE_PATH, MYTHIC, LEGENDARY, JEWEL, MAINHAND } from '../../../utilities/constants';
 import { EquipmentService } from 'src/app/equipment.service';
 import { IEquipment } from 'src/interfaces/equipment';
-
-declare var $: any;
+import { IStat } from 'src/interfaces/stat';
 
 @Component({
   selector: 'app-equipment-simulator',
@@ -31,7 +30,7 @@ export class EquipmentSimulatorComponent {
   type: string = "";
   rarity: string = "";
   jewelRarity:string = "";
-  stats: string = "Test Stats: 20%";
+  stats: IStat[] = [];
 
   constructor(private equipmentService: EquipmentService) { }
 
@@ -43,7 +42,7 @@ export class EquipmentSimulatorComponent {
   // DESCRIPTION :
   //  Fetch all available equipment data from backend for selected slot/type
   // PARAMETERS  :
-  //  type - the selected equipment slot/type (E.g. "Helmet", "Chest")
+  //  equipmentSelectEvent - the selected equipment slot/type (E.g. "Helmet", "Chest")
   getEquipmentInfo(equipmentSelectEvent:any)
   {
     this.slotName = equipmentSelectEvent.slotName;
@@ -51,9 +50,11 @@ export class EquipmentSimulatorComponent {
     this.rarity = MYTHIC;
     this.jewelRarity = LEGENDARY;
 
+    //Fetch equipment
     this.equipmentService.getEquipment(equipmentSelectEvent.type)
       .subscribe(response => this.equipment = response);
 
+    //Fetch jewels
     this.equipmentService.getEquipment(JEWEL)
       .subscribe(response => this.jewels = response);
 
@@ -63,8 +64,6 @@ export class EquipmentSimulatorComponent {
   // DESCRIPTION :
   //  Populates the equipmentArray and jewelArray with the currently selected equipment 
   //  and rarity for the modal
-  // PARAMETERS  :
-  //  type - the selected equipment slot/type (E.g. "Helmet", "Chest")
   populateModal()
   {
     let selectedEquipment: IEquipment[] = this.equipment.filter(equipment => equipment.type === this.type && equipment.rarity === MYTHIC);
@@ -72,9 +71,6 @@ export class EquipmentSimulatorComponent {
     
     let selectedJewels: IEquipment[] = this.jewels.filter(jewel => jewel.rarity === LEGENDARY);
     this.jewelsArray = selectedJewels;
-
-    //Initialize Tooltips
-    $('[data-bs-toggle="tooltip"]').tooltip();
   }
 
   // DESCRIPTION :
@@ -93,65 +89,132 @@ export class EquipmentSimulatorComponent {
 
     let selectedJewels: IEquipment[] = this.jewels.filter(jewel => jewel.rarity === this.jewelRarity);
     this.jewelsArray = selectedJewels;
-
-    //Initialize Tooltips
-    $('[data-bs-toggle="tooltip"]').tooltip();
   }
 
   // DESCRIPTION :
-  //  DEBUG
+  //  Changes the currently selected equipment in the equipmentSlotList to the one selected in the modal. 
+  //  This is communicated to the child component equipmentSlot
   // PARAMETERS  :
   //  selectedEquipment - the selected equipment (E.g. "Frostwing Greatsword", "Venom Blade")
   equipmentSelected(selectedEquipment: IEquipment)
   {
-    //DEBUG
-    console.log("SELECTED EQUIPMENT", selectedEquipment);
-
     for(let i = 0; i < this.equipmentSlotList.length; i++)
     {
       if (this.equipmentSlotList[i].type === selectedEquipment.type)
       {
         if (this.equipmentSlotList[i].slotName === this.slotName)
         {
+          const defaultImgPath = "/" + this.equipmentSlotList[i].type + ".PNG";
+
+          //If the imgPath for the current piece of equipment isn't default, then stats will have 
+          //to be deducted before adding the new piece
+          if (this.equipmentSlotList[i].currentEquipment.imgPath !== defaultImgPath)
+          {
+            this.removeStats(this.equipmentSlotList[i].currentEquipment);
+          }
+
           this.equipmentSlotList[i].currentEquipment = selectedEquipment;
           break;
         }
       }
     }
+
+    this.addStats(selectedEquipment);
   }
 
   // DESCRIPTION :
-  //  DEBUG
+  //  Changes the currently selected jewel in the equipmentSlotList to the one selected in the modal. 
+  //  This is communicated to the child component equipmentSlot
   // PARAMETERS  :
   //  selectedJewel - the selected equipment (E.g. "Infantry Attack Jewel", "Champion Jewel")
   jewelSelected(selectedJewel: IEquipment)
   {
-    //DEBUG
-    console.log("SELECTED JEWEL", selectedJewel);
-
     for(let i = 0; i < this.equipmentSlotList.length; i++)
     {
       if (this.equipmentSlotList[i].slotName === this.slotName)
       {
+        const defaultImgPath = "/" + this.equipmentSlotList[i].type + ".PNG";
+
         //Check if any sockets are empty
         if (this.equipmentSlotList[i].currentJewel1.imgPath == "")
         {
+          //If the imgPath for the current piece of equipment isn't default, then stats will have 
+          //to be deducted before adding the new piece
+          if (this.equipmentSlotList[i].currentJewel1.imgPath !== defaultImgPath)
+          {
+            this.removeStats(this.equipmentSlotList[i].currentJewel1);
+          }
+
           this.equipmentSlotList[i].currentJewel1 = selectedJewel;
+          this.addStats(selectedJewel);
         }
         else if (this.equipmentSlotList[i].currentJewel2.imgPath == "")
         {
+          //If the imgPath for the current piece of equipment isn't default, then stats will have 
+          //to be deducted before adding the new piece
+          if (this.equipmentSlotList[i].currentJewel2.imgPath !== defaultImgPath)
+          {
+            this.removeStats(this.equipmentSlotList[i].currentJewel2);
+          }
+
           this.equipmentSlotList[i].currentJewel2 = selectedJewel;
+          this.addStats(selectedJewel);
         }
         else if (this.equipmentSlotList[i].currentJewel3.imgPath == "")
         {
+          //If the imgPath for the current piece of equipment isn't default, then stats will have 
+          //to be deducted before adding the new piece
+          if (this.equipmentSlotList[i].currentJewel3.imgPath !== defaultImgPath)
+          {
+            this.removeStats(this.equipmentSlotList[i].currentJewel3);
+          }
+
           this.equipmentSlotList[i].currentJewel3 = selectedJewel;
+          this.addStats(selectedJewel);
         }
 
-        //Start overriding?
-        //Check for duplicates
-        //Honestly just make it a click on that box. This is clunky
         break;
       }
     }
+  }
+
+  // DESCRIPTION :
+  //  Adds the new equipment or jewel to the stats array. Existing names are added together, 
+  //  while new names are pushed to the array
+  // PARAMETERS  :
+  //  newEquipment - the selected equipment (E.g. "Wyrmbone Coronet", "Infantry Attack Jewel")
+  addStats(newEquipment: IEquipment)
+  {
+    newEquipment.stats.forEach(newStat => 
+    {
+      if (this.stats.some(existingStat => existingStat.name === newStat.name))
+      {
+        const index = this.stats.findIndex(existingStat => existingStat.name === newStat.name);
+        this.stats[index].value = this.stats[index].value + newStat.value;
+      }
+      else
+      {
+        this.stats.push({ name: newStat.name, value: newStat.value });
+      }
+    })
+  }
+
+  // DESCRIPTION :
+  //  Removes the old equipment or jewel from the stats array. Existing names are subtracted, 
+  //  and if the resulting value is 0, it is removed from the array
+  // PARAMETERS  :
+  //  oldEquipment - the selected equipment (E.g. "Wyrmbone Coronet", "Infantry Attack Jewel")
+  removeStats(oldEquipment: IEquipment)
+  {
+    oldEquipment.stats.forEach(oldStat => 
+    {
+      const index = this.stats.findIndex(existingStat => existingStat.name === oldStat.name);
+      this.stats[index].value = this.stats[index].value - oldStat.value;
+
+      if (this.stats[index].value == 0)
+      {
+        this.stats.splice(index, 1);
+      }
+    })
   }
 }

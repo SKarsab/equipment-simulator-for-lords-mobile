@@ -73,16 +73,18 @@
                     </div>
                 </div>
         
-                <!-- DEBUG
-                TODO: REMOVE DEBUG CLASS AND FIX SIZE/RESPONSIVE POSITION -->
+                <!-- DEBUG TODO: FIX DEBUG CLASS -->
                 <!-- Stats Window -->
                 <div class="container d-flex justify-content-center">
                     <div class="fg-colour b-rounded debug-size mt-4 me-4 mb-4 collapse-on-sm fixed-on-md">
                         <p class="text-white ps-2 fs-5">Stats:</p>
-                        <p class="text-white ps-2">{{ stats }}</p>
+
+                        <div class="d-flex" *ngFor="let stat of stats">
+                            <p class="text-white ps-2 m-0"><b>{{ stat.name + ": " }}</b></p>
+                            <p class="text-green ps-2 m-0">{{ stat.value }}%</p>
+                        </div>
                     </div>  
                 </div>
-                
             </div>
         </div>
 
@@ -114,14 +116,14 @@
                         <p class="text-white m-0">{{type}}:</p>
                         <div class="d-flex flex-settings p-0">
                             <button type="button" class="btn box-shadow button-border m-1" *ngFor="let equipment of equipmentArray" (click)="equipmentSelected(equipment)" [ngClass]="{'orange-conic-gr': rarity == 'Mythic', 'gold-conic-gr': rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
-                                <img class="modal-img-size fg-z" src="{{ BASE_IMAGE_PATH + equipment.type + equipment.imgPath }}" alt="armour"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ equipment.name }}">
+                                <img class="modal-img-size fg-z" src="{{ BASE_IMAGE_PATH + equipment.type + equipment.imgPath }}" alt="armour">
                             </button>
                         </div>
 
                         <p class="text-white m-0">Jewels:</p>
                         <div class="d-flex flex-settings p-0">
                             <button type="button" class="btn box-shadow button-border m-1" *ngFor="let jewel of jewelsArray" (click)="jewelSelected(jewel)" [ngClass]="{'gold-conic-gr': rarity == 'Mythic' || rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
-                                <img class="modal-img-size" src="{{ BASE_IMAGE_PATH + jewel.type + jewel.imgPath }}" alt="jewel"  data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ jewel.name }}">
+                                <img class="modal-img-size" src="{{ BASE_IMAGE_PATH + jewel.type + jewel.imgPath }}" alt="jewel">
                             </button>
                         </div>
                     </div>

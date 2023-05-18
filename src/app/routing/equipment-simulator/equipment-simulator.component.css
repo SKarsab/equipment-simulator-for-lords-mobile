@@ -1,8 +1,9 @@
 .center-img {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    /* transform: translate(-43%, -55%); */
     left: 47%;
-    transform: translate(-43%, -55%);
+    transform: translate(-43%);
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(./../../../assets/Images/Equipment/centerHero.png);
@@ -16,7 +17,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 768px) {
     .fixed-on-md {
         position: fixed;
         top: 10%;
@@ -47,19 +48,8 @@
     padding-left: 12px;
 }
 
-.white {
-    background-color: #9E9E9E;
-    height: 30px;
-}
-
-.green {
-    background-color: #3C9E09;
-    height: 30px;
-}
-
-.blue {
-    background-color: #2D5DC3;
-    height: 30px;
+.text-green {
+    color: #3C9E09;
 }
 
 .purple {

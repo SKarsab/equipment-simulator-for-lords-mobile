@@ -19,6 +19,7 @@ export class BuildsBenchmarksComponent {
     new Build("./../../../assets/Images/BuildIcons/cottageroar.webp", "Infantry Blast Multi-purpose", "5/18/2023", GOLD, P424_ROUTE, [1, 2, 3], [4, 5], [MONSTER, CASTLES, WONDER, P2P]),
     new Build("./../../../assets/Images/BuildIcons/helldrider.webp", "Ranged Blast Multi-purpose", "5/18/2023", GOLD, P424_ROUTE, [1, 2, 3], [4, 5], [MONSTER, CASTLES, WONDER, P2P]),
     new Build("./../../../assets/Images/BuildIcons/gawrilla.webp", "Cavalry Blast Multi-purpose", "5/18/2023", GOLD, P424_ROUTE, [1, 2, 3], [4, 5], [MONSTER, CASTLES, WONDER, P2P]),
+    new Build("./../../../assets/Images/BuildIcons/frostwing.webp", "111 Defense Rallies", "5/18/2023", PURPLE, P424_ROUTE, [1, 2], [3, 4, 5], [MONSTER, CASTLES, F2P]),
     new Build("./../../../assets/Images/BuildIcons/mecha.webp", "Infantry Blast Multi-purpose", "5/18/2023", PURPLE, P424_ROUTE, [1, 2], [3, 4, 5], [MONSTER, CASTLES, DARKNEST, F2P]),
     new Build("./../../../assets/Images/BuildIcons/jade.webp", "Ranged Blast Multi-purpose", "5/18/2023", PURPLE, P424_ROUTE, [1, 2], [3, 4, 5], [MONSTER, CASTLES, DARKNEST, F2P]),
     new Build("./../../../assets/Images/BuildIcons/gargantua.webp", "Cavalry Blast Multi-purpose", "5/18/2023", PURPLE, P424_ROUTE, [1, 2], [3, 4, 5], [MONSTER, CASTLES, DARKNEST, F2P])

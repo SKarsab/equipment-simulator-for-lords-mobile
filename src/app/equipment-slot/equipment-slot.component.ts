@@ -4,7 +4,8 @@
 
 import { Component, EventEmitter, Input, Output, SimpleChanges  } from '@angular/core';
 import { EquipmentSlot } from './equipment-slot.model';
-import { BASE_FILE_PATH } from 'src/utilities/constants';
+import { BASE_FILE_PATH, DEFAULT_JEWEL } from 'src/utilities/constants';
+import { IEquipment } from 'src/interfaces/equipment';
 
 @Component({
   selector: 'app-equipment-slot',
@@ -22,10 +23,32 @@ export class EquipmentSlotComponent {
     this.equipmentSelectEvent.emit({type: this.equipmentSlot.type, slotName: this.equipmentSlot.slotName});
   }
 
-  emitRemoveJewel() {
-    //DEBUG
-    console.log("REMOVING JEWEL");
-    //this.removeJewelEvent.emit();
+  emitRemoveJewel(jewelToRemove: IEquipment) {
+    if (jewelToRemove.imgPath === "")
+    {
+      return;
+    }
+
+    let slotNumber: number = 0;
+
+    //Remove the jewel from the equipment slot if there is a jewel in the first place
+    if (this.equipmentSlot.currentJewel1.name === jewelToRemove.name)
+    {
+      this.equipmentSlot.currentJewel1 = DEFAULT_JEWEL;
+      slotNumber = 1;
+    }
+    else if (this.equipmentSlot.currentJewel2.name === jewelToRemove.name)
+    {
+      this.equipmentSlot.currentJewel2 = DEFAULT_JEWEL;
+      slotNumber = 2;
+    }
+    else if (this.equipmentSlot.currentJewel3.name === jewelToRemove.name)
+    {
+      this.equipmentSlot.currentJewel3 = DEFAULT_JEWEL;
+      slotNumber = 3;
+    }
+
+    this.removeJewelEvent.emit({jewel: jewelToRemove, slotName: this.equipmentSlot.slotName, slot: slotNumber});
   }
 
   //DEBUG

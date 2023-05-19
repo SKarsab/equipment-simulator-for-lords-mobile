@@ -12,5 +12,20 @@
         </div>
     </div>
 
-    <p class="text-white">Builds & Benchmarks Component</p>
+    <div class="container p-2">
+        <h1 class="text-white fw-bold mt-5 ">Lords Mobile Builds</h1>
+        <p class="text-white">Browse our growing collection of Lords Mobile builds for PvE and PvP content such as War of Wonders, Dragon Arena, Darknests, and more.</p>
+
+        <!-- Builds -->
+        <app-build-card *ngFor="let build of builds"
+            [imgPath]="build.imgPath" 
+            [title]="build.title" 
+            [dateAdded]="build.dateAdded"
+            [colour]="build.colour"
+            [navigationPath]="build.navigationPath"
+            [difficultyPlus]="build.difficultyPlus"
+            [difficultyMinus]="build.difficultyMinus"
+            [tags]="build.tags">
+        </app-build-card>
+    </div>
 </div>

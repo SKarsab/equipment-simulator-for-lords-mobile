@@ -5,14 +5,14 @@
         </button>
     </div>
     <div class="d-flex fg-z">
-        <div class="jewelSize bg-dark box-shadow b-rounded equipmentButton" (click)="emitRemoveJewel()" [ngClass]="{'gold-conic-gr': (equipmentSlot.currentJewel1.rarity == 'Mythic' && equipmentSlot.currentJewel1.imgPath != '') || (equipmentSlot.currentJewel1.rarity == 'Legendary' && equipmentSlot.currentJewel1.imgPath != '') , 'purple-conic-gr': (equipmentSlot.currentJewel1.rarity == 'Epic' && equipmentSlot.currentJewel1.imgPath != '')}">
-            <img src="{{ BASE_IMAGE_PATH + equipmentSlot.currentJewel1.type + equipmentSlot.currentJewel1.imgPath }}" alt="jewel1" class="jewelSize">
+        <div class="jewelSize bg-dark box-shadow b-rounded equipmentButton" (click)="emitRemoveJewel(equipmentSlot.currentJewel1)" [ngClass]="{'gold-conic-gr': (equipmentSlot.currentJewel1.rarity == 'Mythic' && equipmentSlot.currentJewel1.imgPath != '') || (equipmentSlot.currentJewel1.rarity == 'Legendary' && equipmentSlot.currentJewel1.imgPath != '') , 'purple-conic-gr': (equipmentSlot.currentJewel1.rarity == 'Epic' && equipmentSlot.currentJewel1.imgPath != '')}">
+            <img *ngIf="equipmentSlot.currentJewel1.imgPath != ''" src="{{ BASE_IMAGE_PATH + equipmentSlot.currentJewel1.type + equipmentSlot.currentJewel1.imgPath }}" alt="jewel1" class="jewelSize">
         </div>
-        <div class="jewelSize bg-dark box-shadow b-rounded equipmentButton" [ngClass]="{'gold-conic-gr': (equipmentSlot.currentJewel2.rarity == 'Mythic' && equipmentSlot.currentJewel2.imgPath != '') || (equipmentSlot.currentJewel2.rarity == 'Legendary' && equipmentSlot.currentJewel2.imgPath != '') , 'purple-conic-gr': (equipmentSlot.currentJewel2.rarity == 'Epic' && equipmentSlot.currentJewel2.imgPath != '')}">
-            <img src="{{ BASE_IMAGE_PATH + equipmentSlot.currentJewel2.type + equipmentSlot.currentJewel2.imgPath }}" alt="jewel2" class="jewelSize">
+        <div class="jewelSize bg-dark box-shadow b-rounded equipmentButton" (click)="emitRemoveJewel(equipmentSlot.currentJewel2)" [ngClass]="{'gold-conic-gr': (equipmentSlot.currentJewel2.rarity == 'Mythic' && equipmentSlot.currentJewel2.imgPath != '') || (equipmentSlot.currentJewel2.rarity == 'Legendary' && equipmentSlot.currentJewel2.imgPath != '') , 'purple-conic-gr': (equipmentSlot.currentJewel2.rarity == 'Epic' && equipmentSlot.currentJewel2.imgPath != '')}">
+            <img *ngIf="equipmentSlot.currentJewel2.imgPath != ''" src="{{ BASE_IMAGE_PATH + equipmentSlot.currentJewel2.type + equipmentSlot.currentJewel2.imgPath }}" alt="jewel2" class="jewelSize">
         </div>
-        <div class="jewelSize bg-dark box-shadow b-rounded equipmentButton" [ngClass]="{'gold-conic-gr': (equipmentSlot.currentJewel3.rarity == 'Mythic' && equipmentSlot.currentJewel3.imgPath != '') || (equipmentSlot.currentJewel3.rarity == 'Legendary' && equipmentSlot.currentJewel3.imgPath != '') , 'purple-conic-gr': (equipmentSlot.currentJewel3.rarity == 'Epic' && equipmentSlot.currentJewel3.imgPath != '')}">
-            <img src="{{ BASE_IMAGE_PATH + equipmentSlot.currentJewel3.type + equipmentSlot.currentJewel3.imgPath }}" alt="jewel3" class="jewelSize">
+        <div class="jewelSize bg-dark box-shadow b-rounded equipmentButton" (click)="emitRemoveJewel(equipmentSlot.currentJewel3)" [ngClass]="{'gold-conic-gr': (equipmentSlot.currentJewel3.rarity == 'Mythic' && equipmentSlot.currentJewel3.imgPath != '') || (equipmentSlot.currentJewel3.rarity == 'Legendary' && equipmentSlot.currentJewel3.imgPath != '') , 'purple-conic-gr': (equipmentSlot.currentJewel3.rarity == 'Epic' && equipmentSlot.currentJewel3.imgPath != '')}">
+            <img *ngIf="equipmentSlot.currentJewel3.imgPath != ''" src="{{ BASE_IMAGE_PATH + equipmentSlot.currentJewel3.type + equipmentSlot.currentJewel3.imgPath }}" alt="jewel3" class="jewelSize">
         </div>
     </div>
 </div>

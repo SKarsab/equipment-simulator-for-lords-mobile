@@ -13,6 +13,7 @@ import { FaqComponent } from './routing/faq/faq.component';
 import { FeatureCardComponent } from './feature-card/feature-card.component';
 import { BuildsBenchmarksComponent } from './routing/builds-benchmarks/builds-benchmarks.component';
 import { EquipmentSlotComponent } from './equipment-slot/equipment-slot.component';
+import { BuildCardComponent } from './build-card/build-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EquipmentSlotComponent } from './equipment-slot/equipment-slot.componen
     FaqComponent,
     FeatureCardComponent,
     BuildsBenchmarksComponent,
-    EquipmentSlotComponent
+    EquipmentSlotComponent,
+    BuildCardComponent
   ],
   imports: [
     BrowserModule,

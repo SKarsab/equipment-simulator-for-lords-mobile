@@ -6,7 +6,7 @@
 import { Component } from '@angular/core';
 import { EquipmentSlot } from '../../equipment-slot/equipment-slot.model';
 import { defaultEquipmentSlots } from '../../../utilities/equipmentSlots';
-import { HOME_ROUTE, BASE_FILE_PATH, MYTHIC, LEGENDARY, JEWEL, MAINHAND } from '../../../utilities/constants';
+import { HOME_ROUTE, BASE_FILE_PATH, MYTHIC, LEGENDARY, JEWEL, MAINHAND, DEFAULT_JEWEL } from '../../../utilities/constants';
 import { EquipmentService } from 'src/app/equipment.service';
 import { IEquipment } from 'src/interfaces/equipment';
 import { IStat } from 'src/interfaces/stat';
@@ -216,5 +216,34 @@ export class EquipmentSimulatorComponent {
         this.stats.splice(index, 1);
       }
     })
+  }
+
+  // DESCRIPTION :
+  //  
+  // PARAMETERS  :
+  //  removeJewelEvent - 
+  removeJewel(removeJewelEvent:any) 
+  {
+    const index = this.equipmentSlotList.findIndex(equipmentSlot => equipmentSlot.slotName === removeJewelEvent.slotName);
+    
+    switch (removeJewelEvent.slotNumber)
+    {
+      case 1:
+        this.equipmentSlotList[index].currentJewel1 = DEFAULT_JEWEL;
+        break;
+
+      case 2:
+        this.equipmentSlotList[index].currentJewel2 = DEFAULT_JEWEL;
+        break;
+
+      case 3:
+        this.equipmentSlotList[index].currentJewel3 = DEFAULT_JEWEL;
+        break;
+
+      default:
+        break;
+    }
+
+    this.removeStats(removeJewelEvent.jewel);
   }
 }

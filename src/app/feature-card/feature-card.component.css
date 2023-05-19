@@ -1,16 +1,3 @@
 .checkered {
     background-color: rgba(0, 0, 0, 0.2);
 }
-
-.title-underline {
-    border-bottom: 2px solid;
-}
-
-.feature-link {
-    color: goldenrod;
-    text-decoration: none;
-    cursor: pointer;
-}
-    .feature-link:hover {
-        color: white;
-    }

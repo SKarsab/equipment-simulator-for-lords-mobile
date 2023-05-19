@@ -14,8 +14,4 @@ export class FeatureCardComponent {
   @Input() checkered!: boolean; //Dark grey background if true, normal page background if false
   @Input() colour!: string;
   @Input() navigationPath!: string;
-
-  ngOnInit() {
-    console.log(this.title + ": " + this.navigationPath);
-  }
 }

@@ -20,13 +20,15 @@
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
                             [equipmentSlot]="equipmentSlotList[0]"
-                            (equipmentSelectEvent)="getEquipmentInfo($event)">
+                            (equipmentSelectEvent)="getEquipmentInfo($event)"
+                            (removeJewelEvent)="removeJewel($event)">
                         </app-equipment-slot>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
                             [equipmentSlot]="equipmentSlotList[1]"
-                            (equipmentSelectEvent)="getEquipmentInfo($event)">
+                            (equipmentSelectEvent)="getEquipmentInfo($event)"
+                            (removeJewelEvent)="removeJewel($event)">
                         </app-equipment-slot>
                     </div>
                 </div>
@@ -34,13 +36,15 @@
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
                             [equipmentSlot]="equipmentSlotList[2]"
-                            (equipmentSelectEvent)="getEquipmentInfo($event)">
+                            (equipmentSelectEvent)="getEquipmentInfo($event)"
+                            (removeJewelEvent)="removeJewel($event)">
                         </app-equipment-slot>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
                             [equipmentSlot]="equipmentSlotList[3]"
-                            (equipmentSelectEvent)="getEquipmentInfo($event)">
+                            (equipmentSelectEvent)="getEquipmentInfo($event)"
+                            (removeJewelEvent)="removeJewel($event)">
                         </app-equipment-slot>
                     </div>
                 </div>
@@ -48,13 +52,15 @@
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
                             [equipmentSlot]="equipmentSlotList[4]"
-                            (equipmentSelectEvent)="getEquipmentInfo($event)">
+                            (equipmentSelectEvent)="getEquipmentInfo($event)"
+                            (removeJewelEvent)="removeJewel($event)">
                         </app-equipment-slot>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
                             [equipmentSlot]="equipmentSlotList[5]"
-                            (equipmentSelectEvent)="getEquipmentInfo($event)">
+                            (equipmentSelectEvent)="getEquipmentInfo($event)"
+                            (removeJewelEvent)="removeJewel($event)">
                         </app-equipment-slot>
                     </div>
                 </div>
@@ -62,13 +68,15 @@
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
                             [equipmentSlot]="equipmentSlotList[6]"
-                            (equipmentSelectEvent)="getEquipmentInfo($event)">
+                            (equipmentSelectEvent)="getEquipmentInfo($event)"
+                            (removeJewelEvent)="removeJewel($event)">
                         </app-equipment-slot>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <app-equipment-slot 
                             [equipmentSlot]="equipmentSlotList[7]"
-                            (equipmentSelectEvent)="getEquipmentInfo($event)">
+                            (equipmentSelectEvent)="getEquipmentInfo($event)"
+                            (removeJewelEvent)="removeJewel($event)">
                         </app-equipment-slot>
                     </div>
                 </div>
@@ -115,14 +123,14 @@
                     <div class="col-12">
                         <p class="text-white m-0">{{type}}:</p>
                         <div class="d-flex flex-settings p-0">
-                            <button type="button" class="btn box-shadow button-border m-1" *ngFor="let equipment of equipmentArray" (click)="equipmentSelected(equipment)" [ngClass]="{'orange-conic-gr': rarity == 'Mythic', 'gold-conic-gr': rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
+                            <button type="button" class="btn box-shadow button-border m-1" *ngFor="let equipment of equipmentArray" (click)="equipmentSelected(equipment)" data-bs-dismiss="modal" [ngClass]="{'orange-conic-gr': rarity == 'Mythic', 'gold-conic-gr': rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
                                 <img class="modal-img-size fg-z" src="{{ BASE_IMAGE_PATH + equipment.type + equipment.imgPath }}" alt="armour">
                             </button>
                         </div>
 
                         <p class="text-white m-0">Jewels:</p>
                         <div class="d-flex flex-settings p-0">
-                            <button type="button" class="btn box-shadow button-border m-1" *ngFor="let jewel of jewelsArray" (click)="jewelSelected(jewel)" [ngClass]="{'gold-conic-gr': rarity == 'Mythic' || rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
+                            <button type="button" class="btn box-shadow button-border m-1" *ngFor="let jewel of jewelsArray" (click)="jewelSelected(jewel)" data-bs-dismiss="modal" [ngClass]="{'gold-conic-gr': rarity == 'Mythic' || rarity == 'Legendary', 'purple-conic-gr': rarity == 'Epic'}">
                                 <img class="modal-img-size" src="{{ BASE_IMAGE_PATH + jewel.type + jewel.imgPath }}" alt="jewel">
                             </button>
                         </div>

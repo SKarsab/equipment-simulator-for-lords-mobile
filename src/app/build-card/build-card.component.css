@@ -1,0 +1,36 @@
+.build-card {
+    border-left: 5px solid;
+    height: 60px;
+}
+
+.build-card:hover {
+    cursor: pointer;
+    background-color: #191b1e;
+}
+
+.icon-size {
+    height: 40px;
+    width: 40px;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.bg-golden {
+    background-color: goldenrod;
+}
+
+@media (max-width: 767px) {
+    .expand-on-mobile {
+      width: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hide-on-mobile {
+      display: none !important;
+    }
+}

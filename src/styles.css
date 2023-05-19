@@ -144,3 +144,16 @@ and (max-device-width : 1150px){
 .button-border {
     border: 1px solid black;
 }
+
+.title-underline {
+    border-bottom: 2px solid;
+}
+
+.feature-link {
+    color: goldenrod;
+    text-decoration: none;
+    cursor: pointer;
+}
+    .feature-link:hover {
+        color: white;
+    }

@@ -8,7 +8,7 @@ import { Build } from '../../build-card/build.model';
   styleUrls: ['./builds-benchmarks.component.css']
 })
 export class BuildsBenchmarksComponent {
-  HOME_PATH:string = HOME_ROUTE;
+  HOME_PATH: string = HOME_ROUTE;
 
   builds: Build[] = [
     new Build("./../../../assets/Images/BuildIcons/champ1.webp", "424 War of Wonders", "5/18/2023", ORANGE, P424_ROUTE, [1, 2, 3, 4], [5], [PARTIAL_CHAMP, MONSTER, WONDER, P2P]),

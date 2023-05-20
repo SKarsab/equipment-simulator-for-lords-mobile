@@ -9,7 +9,8 @@ export const SIMULATOR_ROUTE: string = "/equipment-simulator";
 export const BENCHMARKS_ROUTE: string = "/builds-benchmarks";
 export const GUIDES_ROUTE: string = "/guides";
 export const FAQ_ROUTE: string = "/faq";
-export const P424_ROUTE: string = "/G424-war-of-wonders";
+
+export const B424_ROUTE: string = "/builds-benchmarks/builds/B424-war-of-wonders";
 
 //Misc
 export const BASE_FILE_PATH:string = "./../../assets/Images/Equipment/";

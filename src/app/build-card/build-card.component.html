@@ -1,23 +1,23 @@
-<div class="fg-colour b-rounded box-shadow build-card d-flex align-items-center mt-2 mb-2" [ngStyle]="{'border-color': colour}">
-    <div class="d-flex align-items-center w-25 expand-on-mobile">
-        <img src="{{ imgPath }}" alt="buildIcon" class="icon-size ms-3">
+<a class="feature-link" routerLink={{navigationPath}}>
+    <div class="fg-colour b-rounded box-shadow build-card d-flex align-items-center mt-2 mb-2" [ngStyle]="{'border-color': colour}">
+        <div class="d-flex align-items-center w-25 expand-on-mobile">
+            <img src="{{ imgPath }}" alt="buildIcon" class="icon-size ms-3">
 
-        <p class="text-white fw-bold m-0 ms-4">{{ title }}</p>
-    </div>
-    <div class="d-flex align-items-center w-25 hide-on-mobile">
-        <p class="text-white m-0">{{ dateAdded }}</p>
+            <p class="text-white fw-bold m-0 ms-4">{{ title }}</p>
+        </div>
+        <div class="d-flex align-items-center w-25 hide-on-mobile">
+            <p class="text-white m-0">{{ dateAdded }}</p>
 
-        <div class="w-100 d-flex justify-content-end">
-            <div class="circle bg-golden m-1" *ngFor="let difficulty of difficultyPlus"></div>
-            <div class="circle bg-dark m-1" *ngFor="let difficulty of difficultyMinus"></div>
+            <div class="w-100 d-flex justify-content-end">
+                <div class="circle bg-golden m-1" *ngFor="let difficulty of difficultyPlus"></div>
+                <div class="circle bg-dark m-1" *ngFor="let difficulty of difficultyMinus"></div>
+            </div>
+        </div>
+        <div class="w-50 d-flex justify-content-end hide-on-mobile">
+            <div class="bg-dark b-rounded text-white ps-2 pe-2 pt-1 pb-1 m-1" *ngFor="let tag of tags">{{ tag }}</div>
+        </div>
+        <div class="ms-auto">
+            <span class="material-symbols-outlined fs-3 p-0">chevron_right</span>
         </div>
     </div>
-    <div class="w-50 d-flex justify-content-end hide-on-mobile">
-        <div class="bg-dark b-rounded text-white ps-2 pe-2 pt-1 pb-1 m-1" *ngFor="let tag of tags">{{ tag }}</div>
-    </div>
-    <div class="ms-auto">
-        <a class="feature-link d-flex align-self-center" routerLink={{navigationPath}}>
-            <span class="material-symbols-outlined fs-3 p-0">chevron_right</span>
-        </a>
-    </div>
-</div>
+</a>

@@ -6,6 +6,7 @@ import { BuildsBenchmarksComponent } from './routing/builds-benchmarks/builds-be
 import { HomeComponent } from './routing/home/home.component';
 import { GuidesComponent } from './routing/guides/guides.component';
 import { FaqComponent } from './routing/faq/faq.component';
+import { NotFoundComponent } from './routing/not-found/not-found.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
     { path: 'builds-benchmarks', component: BuildsBenchmarksComponent },
     { path: 'guides', component: GuidesComponent },
     { path: 'faq', component: FaqComponent },
+    { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({

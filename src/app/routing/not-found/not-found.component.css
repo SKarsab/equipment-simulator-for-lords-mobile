@@ -1,0 +1,26 @@
+.hero-img {
+    background-image: url('./../../../assets/Images/Equipment/centerHero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 650px;
+}
+
+.layeredContent {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layeredContent2 {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error-numbers {
+    font-size: 350px;
+    font-weight: 700;
+}

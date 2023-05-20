@@ -15,6 +15,7 @@ import { BuildsBenchmarksComponent } from './routing/builds-benchmarks/builds-be
 import { EquipmentSlotComponent } from './equipment-slot/equipment-slot.component';
 import { BuildCardComponent } from './build-card/build-card.component';
 import { P424WarOfWondersComponent } from './routing/p424-war-of-wonders/p424-war-of-wonders.component';
+import { NotFoundComponent } from './routing/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { P424WarOfWondersComponent } from './routing/p424-war-of-wonders/p424-wa
     BuildsBenchmarksComponent,
     EquipmentSlotComponent,
     BuildCardComponent,
-    P424WarOfWondersComponent
+    P424WarOfWondersComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

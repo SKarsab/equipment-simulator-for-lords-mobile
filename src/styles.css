@@ -29,6 +29,12 @@ and (max-device-width : 1150px){
     }
 }
 
+@media (max-width: 1000px) {
+    .hidden-hero-mobile {
+      display: none;
+    }
+}
+
 .bg-z {
     z-index: 0;
 }
@@ -114,6 +120,10 @@ and (max-device-width : 1150px){
 
 .box-shadow-two {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.text-shadow {
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.5);
 }
 
 .button-ease-in {

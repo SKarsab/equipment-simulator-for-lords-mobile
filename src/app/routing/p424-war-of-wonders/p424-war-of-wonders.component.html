@@ -7,13 +7,242 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="link underline" routerLink={{HOME_PATH}}>Home</a></li>
                     <li class="breadcrumb-item"><a class="link underline" routerLink={{BUILD_PATH}}>Builds and Benchmarks</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">424 War of Wonders</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
                 </ol>
             </nav>
         </div>
     </div>
 
-    <div class="container p-2 mt-5 pb-5">
-        <h1 class="text-white fw-bold title-underline" [ngStyle]="{'border-color': ORANGE}">424 War of Wonders Build</h1>
+    <div class="container pt-5 pb-5">
+        <h1 class="text-white fw-bold title-underline" [ngStyle]="{'border-color': colour}">{{ title }} Build</h1>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="row">
+                    <div class="col-6 d-flex">
+                        <app-equipment-slot-preview
+                            [equipmentSlot]="equipmentList[0]">
+                        </app-equipment-slot-preview>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-end">
+                        <app-equipment-slot-preview
+                            [equipmentSlot]="equipmentList[1]">
+                        </app-equipment-slot-preview>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 d-flex">
+                        <app-equipment-slot-preview
+                            [equipmentSlot]="equipmentList[2]">
+                        </app-equipment-slot-preview>
+                    </div>
+                    
+                    <div class="col-6 d-flex justify-content-end">
+                        <app-equipment-slot-preview
+                            [equipmentSlot]="equipmentList[3]">
+                        </app-equipment-slot-preview>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 d-flex">
+                        <app-equipment-slot-preview
+                            [equipmentSlot]="equipmentList[4]">
+                        </app-equipment-slot-preview>
+                    </div>
+                    
+                    <div class="col-6 d-flex justify-content-end">
+                        <app-equipment-slot-preview
+                            [equipmentSlot]="equipmentList[5]">
+                        </app-equipment-slot-preview>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 d-flex">
+                        <app-equipment-slot-preview
+                            [equipmentSlot]="equipmentList[6]">
+                        </app-equipment-slot-preview>
+                    </div>
+                    
+                    <div class="col-6 d-flex justify-content-end">
+                        <app-equipment-slot-preview
+                            [equipmentSlot]="equipmentList[7]">
+                        </app-equipment-slot-preview>
+                    </div>
+                </div>
+
+                <div class="row fg-colour box-shadow b-rounded mt-3 mb-3 ms-1 me-1">
+                    <h4 class="text-white p-1">Total Stats:</h4>
+
+                    <div class="d-flex p-0" *ngFor="let stat of stats; let i = index">
+                        <p class="text-white ps-2 m-0"><b>{{ stat.name + ": " }}</b></p>
+                        <p class="text-green ps-2 m-0">{{ stat.value }}%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 col-sm-12 text-white fg-colour box-shadow b-rounded mb-3">
+                <h4 class="fw-bold">Introduction</h4>
+                <P>{{ introduction }}</P>
+
+                <h4 class="fw-bold">Build</h4>
+                <P>{{ build }}</P>
+
+                <h4 class="fw-bold">Notes</h4>
+                <P>{{ notes }}</P>
+
+                <div class="d-flex row">
+                    <h4 class="fw-bold">Ideal Army Composition</h4>
+
+                    <div class="col-6">
+                        <h5 class="mb-2">Rally Fillers</h5>
+                        <div class="d-flex align-items-center mt-2 mb-2">
+                            <img src="{{ BASE_SHARED_PATH + 'infantry.webp' }}" alt="infantry" class="icon-size">
+                            <p class="m-0 ms-3 fs-5 fw-bold">{{ fillerInfantry }}</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-2 mb-2">
+                            <img src="{{ BASE_SHARED_PATH + 'ranged.webp' }}" alt="ranged" class="icon-size">
+                            <p class="m-0 ms-3 fs-5 fw-bold">{{ fillerRanged }}</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-2 mb-2">
+                            <img src="{{ BASE_SHARED_PATH + 'cavalry.webp' }}" alt="cavalry" class="icon-size">
+                            <p class="m-0 ms-3 fs-5 fw-bold">{{ fillerCavalry }}</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="mb-2">Rally Lead</h5>
+                        <div class="d-flex align-items-center mt-2 mb-2">
+                            <img src="{{ BASE_SHARED_PATH + 'cavalry.webp' }}" alt="cavalry" class="icon-size">
+                            <p class="m-0 ms-3 fs-5 fw-bold">{{ lead }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex row">
+                    <div class="col-6">
+                        <h5 class="fw-bold mt-2">Strong Against</h5>
+                        <ul>
+                            <li *ngFor="let strong of strongAgainst">{{ strong }}</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="fw-bold mt-2">Weak Against</h5>
+                        <ul>
+                            <li *ngFor="let weak of weakAgainst">{{ weak }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-white ps-2">
+            <h3 class="fw-bold">Alternatives</h3>
+            <p class="m-0"><b>Note.</b> If you do not have enough champion jewels, then place the missing troop attack jewel in your gear instead.</p>
+            <p><b>Ex.</b> If your equipment has an infantry and cavalry attack jewel with a champion jewel, then replace the champion jewel with a ranged attack jewel.</p>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 d-flex">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="d-flex align-items-center">
+                                <app-equipment-slot-preview
+                                    [equipmentSlot]="equipmentList[0]">
+                                </app-equipment-slot-preview>
+            
+                                <span class="material-symbols-outlined p-0">chevron_right</span>
+            
+                                <app-equipment-slot-preview
+                                    [equipmentSlot]="alternativeList[0]">
+                                </app-equipment-slot-preview>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-12">
+                            <div class="d-flex align-items-center">
+                                <app-equipment-slot-preview
+                                    [equipmentSlot]="equipmentList[1]">
+                                </app-equipment-slot-preview>
+            
+                                <span class="material-symbols-outlined p-0">chevron_right</span>
+            
+                                <app-equipment-slot-preview
+                                    [equipmentSlot]="alternativeList[1]">
+                                </app-equipment-slot-preview>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 d-flex">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="d-flex align-items-center">
+                                <app-equipment-slot-preview
+                                    [equipmentSlot]="equipmentList[2]">
+                                </app-equipment-slot-preview>
+            
+                                <span class="material-symbols-outlined p-0">chevron_right</span>
+            
+                                <app-equipment-slot-preview
+                                    [equipmentSlot]="alternativeList[2]">
+                                </app-equipment-slot-preview>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="d-flex align-items-center">
+                                <app-equipment-slot-preview
+                                    [equipmentSlot]="equipmentList[4]">
+                                </app-equipment-slot-preview>
+            
+                                <span class="material-symbols-outlined p-0">chevron_right</span>
+            
+                                <app-equipment-slot-preview
+                                    [equipmentSlot]="alternativeList[3]">
+                                </app-equipment-slot-preview>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-white ps-2 mt-2">
+            <h3 class="fw-bold">Talents</h3>
+            <p><b>Note.</b> Use the minimal amount of points to unlock the next talent in order to reach the talents below as the scaling per point invested in better in the later talents.</p>
+            
+            <div class="text-center grid">
+                <div class="d-flex-column">
+                    <img src="./../../assets/Images/Talents/armyOffense.webp" alt="talent" class="talent-size">
+                    <p>Army Atk 1</p>
+                </div>
+
+                <div class="d-flex-column">
+                    <img src="./../../assets/Images/Talents/armyHealth.webp" alt="talent" class="talent-size">
+                    <p>Army Hp 1</p>
+                </div>
+
+                <div class="d-flex-column">
+                    <img src="./../../assets/Images/Talents/cavalryOffense.webp" alt="talent" class="talent-size">
+                    <p>Cav Atk 3</p>
+                </div>
+
+                <div class="d-flex-column">
+                    <img src="./../../assets/Images/Talents/rangedOffense.webp" alt="talent" class="talent-size">
+                    <p>Ranged Atk 3</p>
+                </div>
+
+                <div class="d-flex-column">
+                    <img src="./../../assets/Images/Talents/infantryOffense.webp" alt="talent" class="talent-size">
+                    <p>Inf Atk 3</p>
+                </div>
+
+                <div class="d-flex-column">
+                    <img src="./../../assets/Images/Talents/armyHealth.webp" alt="talent" class="talent-size">
+                    <p>Army Hp 2</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

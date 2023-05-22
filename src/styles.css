@@ -167,3 +167,33 @@ and (max-device-width : 1150px){
     .feature-link:hover {
         color: white;
     }
+
+.equipmentSize {
+    width: 100px;
+    height: 100px;
+}
+
+.jewelSize {
+    width: 33px;
+    height: 33px;
+}
+
+.text-green {
+    color: #3C9E09;
+}
+
+.icon-size {
+    width: 40px;
+    height: 40px;
+}
+
+.talent-size {
+    width: 100px;
+    height: 82px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 20px;
+}

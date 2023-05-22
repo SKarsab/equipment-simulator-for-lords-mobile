@@ -16,6 +16,7 @@ import { EquipmentSlotComponent } from './equipment-slot/equipment-slot.componen
 import { BuildCardComponent } from './build-card/build-card.component';
 import { P424WarOfWondersComponent } from './routing/p424-war-of-wonders/p424-war-of-wonders.component';
 import { NotFoundComponent } from './routing/not-found/not-found.component';
+import { EquipmentSlotPreviewComponent } from './equipment-slot-preview/equipment-slot-preview.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NotFoundComponent } from './routing/not-found/not-found.component';
     EquipmentSlotComponent,
     BuildCardComponent,
     P424WarOfWondersComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    EquipmentSlotPreviewComponent
   ],
   imports: [
     BrowserModule,

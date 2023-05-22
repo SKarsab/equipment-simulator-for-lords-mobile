@@ -3,7 +3,8 @@ import { MAINHAND, OFFHAND, HELMET, CHEST, BOOTS, ACCESSORY, JEWEL, LEGENDARY, M
 
 export const defaultEquipmentSlots: EquipmentSlot[] = [
     new EquipmentSlot(MAINHAND, MAINHAND, 
-        {type: MAINHAND, 
+        {
+            type: MAINHAND, 
             rarity: MYTHIC, 
             name: "", 
             imgPath: "/Mainhand.PNG", 

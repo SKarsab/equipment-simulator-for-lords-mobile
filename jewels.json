@@ -1,0 +1,586 @@
+[
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Infantry Attack Jewel",
+        "imgPath": "/infAtk.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Ranged Attack Jewel",
+        "imgPath": "/rangedAtk.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Cavalry Attack Jewel",
+        "imgPath": "/cavAtk.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Infantry Defense Jewel",
+        "imgPath": "/infDef.webp",
+        "stats": [
+            {
+                "name": "Infantry Def",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Ranged Defense Jewel",
+        "imgPath": "/rangedDef.webp",
+        "stats": [
+            {
+                "name": "Ranged Def",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Cavalry Defense Jewel",
+        "imgPath": "/cavDef.webp",
+        "stats": [
+            {
+                "name": "Cavalry Def",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Terror Jewel",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Wyrm Jewel",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Gargantua Jewel",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Trojan Jewel",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Grim Jewel",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Ranged Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Saber Jewel",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Champion Jewel",
+        "imgPath": "/champ.webp",
+        "stats": [
+            {
+                "name": "Army Max Hp",
+                "value": 15.00
+            },
+            {
+                "name": "Travel Speed",
+                "value": 20.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "IC Assault Jewel",
+        "imgPath": "/icAssault.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "CR Assault Jewel",
+        "imgPath": "/crAssault.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "RI Assault Jewel",
+        "imgPath": "/riAssault.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Infantry Atk",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Army Assault Jewel",
+        "imgPath": "/armyAssault.webp",
+        "stats": [
+            {
+                "name": "Army Atk",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Royal Infantry Jewel",
+        "imgPath": "/royalInf.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Royal Ranged Jewel",
+        "imgPath": "/royalRanged.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Legendary",
+        "name": "Royal Cavalry Jewel",
+        "imgPath": "/royalCav.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 10.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Infantry Attack Jewel",
+        "imgPath": "/infAtk.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 12.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Ranged Attack Jewel",
+        "imgPath": "/rangedAtk.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 12.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Cavalry Attack Jewel",
+        "imgPath": "/cavAtk.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 12.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Infantry Defense Jewel",
+        "imgPath": "/infDef.webp",
+        "stats": [
+            {
+                "name": "Infantry Def",
+                "value": 12.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Ranged Defense Jewel",
+        "imgPath": "/rangedDef.webp",
+        "stats": [
+            {
+                "name": "Ranged Def",
+                "value": 12.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Cavalry Defense Jewel",
+        "imgPath": "/cavDef.webp",
+        "stats": [
+            {
+                "name": "Cavalry Def",
+                "value": 12.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Terror Jewel",
+        "imgPath": "/terror.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Infantry Def",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Wyrm Jewel",
+        "imgPath": "/jade.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Ranged Def",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Gargantua Jewel",
+        "imgPath": "/gargantua.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Cavalry Def",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Trojan Jewel",
+        "imgPath": "/mecha.webp",
+        "stats": [
+            {
+                "name": "Infantry Max Hp",
+                "value": 7.50
+            },
+            {
+                "name": "Travel Speed",
+                "value": 2.50
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Grim Jewel",
+        "imgPath": "/grim.webp",
+        "stats": [
+            {
+                "name": "Ranged Max Hp",
+                "value": 7.50
+            },
+            {
+                "name": "Travel Speed",
+                "value": 2.50
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Saber Jewel",
+        "imgPath": "/saber.webp",
+        "stats": [
+            {
+                "name": "Cavalry Max Hp",
+                "value": 7.50
+            },
+            {
+                "name": "Travel Speed",
+                "value": 2.5
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Champion Jewel",
+        "imgPath": "/champ.webp",
+        "stats": [
+            {
+                "name": "Army Max Hp",
+                "value": 7.50
+            },
+            {
+                "name": "Travel Speed",
+                "value": 10.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "IC Assault Jewel",
+        "imgPath": "/icAssault.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Cavalry Atk",
+                "value": 2.50
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "CR Assault Jewel",
+        "imgPath": "/crAssault.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Ranged Atk",
+                "value": 2.50
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "RI Assault Jewel",
+        "imgPath": "/riAssault.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Infantry Atk",
+                "value": 2.50
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Army Assault Jewel",
+        "imgPath": "/armyAssault.webp",
+        "stats": [
+            {
+                "name": "Army Atk",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Royal Infantry Jewel",
+        "imgPath": "/royalInf.webp",
+        "stats": [
+            {
+                "name": "Infantry Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Infantry Max Hp",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Royal Ranged Jewel",
+        "imgPath": "/royalRanged.webp",
+        "stats": [
+            {
+                "name": "Ranged Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Ranged Max Hp",
+                "value": 5.00
+            }
+        ]
+    },
+    {
+        "type": "Jewel",
+        "rarity": "Epic",
+        "name": "Royal Cavalry Jewel",
+        "imgPath": "/royalCav.webp",
+        "stats": [
+            {
+                "name": "Cavalry Atk",
+                "value": 5.00
+            },
+            {
+                "name": "Cavalry Max Hp",
+                "value": 5.00
+            }
+        ]
+    }
+]

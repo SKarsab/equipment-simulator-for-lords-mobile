@@ -9,7 +9,7 @@ import { HOME_ROUTE, BENCHMARKS_ROUTE, BASE_SHARED_PATH, GOLD, MAINHAND, OFFHAND
     templateUrl: './b505-multi-purpose.component.html',
     styleUrls: ['./b505-multi-purpose.component.css']
 })
-export class B505MultiPurposeComponent {
+export class B505MultiPurposeComponent implements OnInit {
     HOME_PATH: string = HOME_ROUTE;
     BUILD_PATH: string = BENCHMARKS_ROUTE;
     BASE_SHARED_PATH: string = BASE_SHARED_PATH;

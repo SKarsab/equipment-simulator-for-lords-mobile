@@ -9,7 +9,7 @@ import { HOME_ROUTE, BENCHMARKS_ROUTE, BASE_SHARED_PATH, GOLD, MAINHAND, OFFHAND
     templateUrl: './b100-infantry-blast.component.html',
     styleUrls: ['./b100-infantry-blast.component.css']
 })
-export class B100InfantryBlastComponent {
+export class B100InfantryBlastComponent implements OnInit {
     HOME_PATH: string = HOME_ROUTE;
     BUILD_PATH: string = BENCHMARKS_ROUTE;
     BASE_SHARED_PATH: string = BASE_SHARED_PATH;

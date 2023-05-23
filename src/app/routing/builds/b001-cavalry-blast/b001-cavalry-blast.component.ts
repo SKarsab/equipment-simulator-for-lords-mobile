@@ -9,7 +9,7 @@ import { HOME_ROUTE, BENCHMARKS_ROUTE, BASE_SHARED_PATH, GOLD, MAINHAND, OFFHAND
     templateUrl: './b001-cavalry-blast.component.html',
     styleUrls: ['./b001-cavalry-blast.component.css']
 })
-export class B001CavalryBlastComponent {
+export class B001CavalryBlastComponent implements OnInit {
     HOME_PATH: string = HOME_ROUTE;
     BUILD_PATH: string = BENCHMARKS_ROUTE;
     BASE_SHARED_PATH: string = BASE_SHARED_PATH;

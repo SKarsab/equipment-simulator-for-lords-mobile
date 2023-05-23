@@ -9,7 +9,7 @@ import { HOME_ROUTE, BENCHMARKS_ROUTE, BASE_SHARED_PATH, ORANGE, MAINHAND, OFFHA
     templateUrl: './b244-war-of-wonders.component.html',
     styleUrls: ['./b244-war-of-wonders.component.css']
 })
-export class B244WarOfWondersComponent {
+export class B244WarOfWondersComponent implements OnInit {
     HOME_PATH: string = HOME_ROUTE;
     BUILD_PATH: string = BENCHMARKS_ROUTE;
     BASE_SHARED_PATH: string = BASE_SHARED_PATH;

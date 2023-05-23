@@ -1,7 +1,7 @@
 import { EquipmentSlot } from "src/app/equipment-slot/equipment-slot.model";
 import { MAINHAND, OFFHAND, HELMET, CHEST, BOOTS, ACCESSORY, JEWEL, LEGENDARY, MYTHIC} from "./constants";
 
-export const defaultEquipmentSlots: EquipmentSlot[] = [
+export const equipmentSlotList: EquipmentSlot[] = [
     new EquipmentSlot(MAINHAND, MAINHAND, 
         {
             type: MAINHAND, 

@@ -12,5 +12,14 @@
         </div>
     </div>
 
-    <p class="text-white">FAQ Component</p>
+    <div class="container mt-5 pb-5">
+        <h1 class="text-white fw-bold">FAQ</h1>
+        <p class="text-white">View common questions that other players have asked us. Contact the guild [DIM] in game if you still have questions.</p>
+
+        <app-question *ngFor="let question of questions"
+            [question]="question.question"
+            [answer]="question.answer" 
+            [colour]="question.colour">
+        </app-question>
+    </div>
 </div>

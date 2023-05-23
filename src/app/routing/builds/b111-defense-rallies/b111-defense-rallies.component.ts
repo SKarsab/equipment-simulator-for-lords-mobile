@@ -9,7 +9,7 @@ import { HOME_ROUTE, BENCHMARKS_ROUTE, BASE_SHARED_PATH, PURPLE, MAINHAND, OFFHA
     templateUrl: './b111-defense-rallies.component.html',
     styleUrls: ['./b111-defense-rallies.component.css']
 })
-export class B111DefenseRalliesComponent {
+export class B111DefenseRalliesComponent implements OnInit {
     HOME_PATH: string = HOME_ROUTE;
     BUILD_PATH: string = BENCHMARKS_ROUTE;
     BASE_SHARED_PATH: string = BASE_SHARED_PATH;

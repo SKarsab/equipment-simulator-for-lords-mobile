@@ -9,7 +9,7 @@ import { HOME_ROUTE, BENCHMARKS_ROUTE, BASE_SHARED_PATH, PURPLE, MAINHAND, OFFHA
     templateUrl: './b010-ranged-budget-blast.component.html',
     styleUrls: ['./b010-ranged-budget-blast.component.css']
 })
-export class B010RangedBudgetBlastComponent {
+export class B010RangedBudgetBlastComponent implements OnInit {
     HOME_PATH: string = HOME_ROUTE;
     BUILD_PATH: string = BENCHMARKS_ROUTE;
     BASE_SHARED_PATH: string = BASE_SHARED_PATH;

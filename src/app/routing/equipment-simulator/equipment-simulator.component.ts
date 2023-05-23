@@ -5,7 +5,7 @@
 
 import { Component } from '@angular/core';
 import { EquipmentSlot } from '../../equipment-slot/equipment-slot.model';
-import { defaultEquipmentSlots } from '../../../utilities/equipmentSlots';
+import { equipmentSlotList } from '../../../utilities/equipmentSlotList';
 import { HOME_ROUTE, BASE_FILE_PATH, MYTHIC, LEGENDARY, JEWEL, MAINHAND, DEFAULT_JEWEL } from '../../../utilities/constants';
 import { EquipmentService } from 'src/app/equipment.service';
 import { IEquipment } from 'src/interfaces/equipment';
@@ -19,7 +19,7 @@ import { IStat } from 'src/interfaces/stat';
 export class EquipmentSimulatorComponent {
   HOME_PATH: string = HOME_ROUTE;
   BASE_IMAGE_PATH: string = BASE_FILE_PATH;
-  equipmentSlotList: EquipmentSlot[] = defaultEquipmentSlots;
+  equipmentSlotList: EquipmentSlot[] = equipmentSlotList;
 
   equipment: IEquipment[] = [];
   equipmentArray: IEquipment[] = [];

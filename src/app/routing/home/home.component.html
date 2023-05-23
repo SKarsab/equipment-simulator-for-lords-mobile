@@ -34,18 +34,43 @@
         </div>
     </div>
 
-    <!-- Features -->
+    <!-- Page Body -->
     <div class="container">
-        <h1 class="text-white text-center mt-5">Explore</h1>
 
-        <div class="grid p-2">
-            <app-feature-card *ngFor="let feature of features"
-                [title]="feature.title" 
-                [description]="feature.description" 
-                [checkered]="feature.checkered"
-                [colour]="feature.colour"
-                [navigationPath]="feature.navigationPath">
-            </app-feature-card>
+        <!-- Features -->
+        <div class="">
+            <h2 class="text-white fw-bold mt-5">Features</h2>
+            <div class="grid">
+                <app-feature-card *ngFor="let feature of features"
+                    [title]="feature.title" 
+                    [description]="feature.description" 
+                    [checkered]="feature.checkered"
+                    [colour]="feature.colour"
+                    [navigationPath]="feature.navigationPath">
+                </app-feature-card>
+            </div>
+        </div>
+
+        <!-- Builds -->
+        <div>
+            <h2 class="text-white fw-bold mt-5">Top Builds</h2>
+
+            <div *ngFor="let build of builds; let i = index">
+                <app-build-card *ngIf="i <= 4"
+                    [imgPath]="build.imgPath" 
+                    [title]="build.title" 
+                    [dateAdded]="build.dateAdded"
+                    [colour]="build.colour"
+                    [navigationPath]="build.navigationPath"
+                    [difficultyPlus]="build.difficultyPlus"
+                    [difficultyMinus]="build.difficultyMinus"
+                    [tags]="build.tags">
+                </app-build-card>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-white fw-bold mt-5">Top Guides</h2>
         </div>
     </div>
 </div>

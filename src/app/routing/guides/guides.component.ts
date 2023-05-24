@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { HOME_ROUTE } from '../../../utilities/constants';
+import { Guide } from 'src/app/guide-card/guide.model';
+import { guideList } from 'src/utilities/guideList';
 
 @Component({
   selector: 'app-guides',
@@ -8,4 +10,5 @@ import { HOME_ROUTE } from '../../../utilities/constants';
 })
 export class GuidesComponent {
   HOME_PATH:string = HOME_ROUTE;
+  guides: Guide[] = guideList;
 }

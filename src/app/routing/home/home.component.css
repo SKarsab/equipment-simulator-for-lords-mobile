@@ -45,7 +45,7 @@ clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     max-width: 800px;
 }
 
-.grid {
+.grid-features {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 5px;

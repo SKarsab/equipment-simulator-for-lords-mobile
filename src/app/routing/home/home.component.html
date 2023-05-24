@@ -38,9 +38,10 @@
     <div class="container">
 
         <!-- Features -->
-        <div class="">
+        <div>
             <h2 class="text-white fw-bold mt-5">Features</h2>
-            <div class="grid">
+
+            <div class="grid-features">
                 <app-feature-card *ngFor="let feature of features"
                     [title]="feature.title" 
                     [description]="feature.description" 
@@ -69,8 +70,20 @@
             </div>
         </div>
 
-        <div>
+        <!-- Guides -->
+        <div class="pb-5">
             <h2 class="text-white fw-bold mt-5">Top Guides</h2>
+
+            <div class="grid-guides">
+                <div *ngFor="let guide of guides; let i = index">
+                    <app-guide-card *ngIf="i <= 5"
+                        [title]="guide.title" 
+                        [imgPath]="guide.imgPath" 
+                        [description]="guide.description"
+                        [navigationPath]="guide.navigationPath">
+                    </app-guide-card>
+                </div>
+            </div>
         </div>
     </div>
 </div>

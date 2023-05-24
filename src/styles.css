@@ -214,3 +214,9 @@ and (max-device-width : 1150px){
       display: none !important;
     }
 }
+
+.grid-guides {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 5px;
+}

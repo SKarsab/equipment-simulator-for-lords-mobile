@@ -1,0 +1,19 @@
+.guide-size {
+    width: 400px;
+    height: 300px;
+}
+
+.guide-preview-size {
+    width: 400px;
+    height: 150px;
+}
+
+.shrink-on-hover {
+    transition: all 0.2s ease-in-out;
+}
+
+.shrink-on-hover:hover {
+    cursor: pointer;
+    background-color: #191b1e;
+    transform: scale(0.95);
+}

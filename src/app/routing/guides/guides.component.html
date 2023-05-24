@@ -12,5 +12,18 @@
         </div>
     </div>
 
-    <p class="text-white">Guides Component</p>
+    <div class="container mt-5 pb-5">
+        <h1 class="text-white fw-bold">Lords Mobile Guides</h1>
+        <p class="text-white">Learn how to play at your best in every encounter, or brush up on some of latest topics in Lords Mobile with our collection of guides.</p>
+
+        <!-- Guides -->
+        <div class="grid-guides">
+            <app-guide-card *ngFor="let guide of guides"
+                [title]="guide.title" 
+                [imgPath]="guide.imgPath" 
+                [description]="guide.description"
+                [navigationPath]="guide.navigationPath">
+            </app-guide-card>
+        </div>
+    </div>
 </div>

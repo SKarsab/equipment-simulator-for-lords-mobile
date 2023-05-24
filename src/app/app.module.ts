@@ -29,6 +29,7 @@ import { B100InfantryBudgetBlastComponent } from './routing/builds/b100-infantry
 import { B010RangedBudgetBlastComponent } from './routing/builds/b010-ranged-budget-blast/b010-ranged-budget-blast.component';
 import { B111DefenseRalliesComponent } from './routing/builds/b111-defense-rallies/b111-defense-rallies.component';
 import { QuestionComponent } from './question/question.component';
+import { GuideCardComponent } from './guide-card/guide-card.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { QuestionComponent } from './question/question.component';
     B100InfantryBudgetBlastComponent,
     B010RangedBudgetBlastComponent,
     B111DefenseRalliesComponent,
-    QuestionComponent
+    QuestionComponent,
+    GuideCardComponent
   ],
   imports: [
     BrowserModule,
